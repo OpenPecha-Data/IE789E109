@@ -1,0 +1,1422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=511' accesskey='1'>Vasubandhu: Abhidharmakośabhāṣya</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Vasubandhu: Abhidharmakośabhāṣya<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[3797]" value="3797" id="lancheckbox" checked >Sanskrit: San: Pradhan (1967)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[4032]" value="4032" id="lancheckbox" checked >Chinese: Chi: 真諦 Zhēndì 563-568 A.D. T.1559</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[4033]" value="4033" id="lancheckbox" checked >Chinese: Chi: 玄奘 Xuánzàng 651 A.D. T 1558, </label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[3650]" value="3650" id="lancheckbox" checked >Tibetan: Tib: Jinamitra/dPal brtsegs, ca. A.D. 800, Tg, mṅon pa, ku</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[3649]" value="3649" id="lancheckbox" checked >Uighur: Uigh: ca. A.D. 900, Stockholm MS</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="511">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="511">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='511'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v511">Search in Vasubandhu: Abhidharmakośabhāṣya</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=511'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=511'>Vasubandhu: Abhidharmakośabhāṣya</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=511" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="52561.Title|52562.Preface|52563.ChapterI:Dhātunirdeśa|52617.ChapterII:Indriyanirdeśa|52626.ChapterIII:Lokanirdeśa|52638.ChapterIV:Karmanirdeśa|52652.ChapterV:Anuśayanirdeśa|52660.ChapterVI:Mārgapudgalanirdeśa|52669.ChapterVII:Jñānanirdeśa|52676.ChapterVIII:Samāpattinirdeśa|52682.ChapterIX:Conclusions|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52561.Title" border=0 hspace=2><a id="href_52561.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961983&level=1&cid=501536" class="ajax_tree0">Title
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52562.Preface" border=0 hspace=2><a id="href_52562.Preface" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961984&level=1&cid=501537" class="ajax_tree0">Preface
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52563.ChapterI:Dhātunirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52563.ChapterI:Dhātunirdeśa" border=0 hspace=2><a id="href_52563.ChapterI:Dhātunirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961985&level=1&cid=501538" class="ajax_tree0">Chapter I: Dhātunirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52563.ChapterI:Dhātunirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52564.Verses1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52564.Verses1-10" border=0 hspace=2><a id="href_52564.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961985&level=2&cid=501538" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<div style="display:none;"  id="div_52564.Verses1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52565.Verse1" border=0 hspace=2><a id="href_52565.Verse1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961985&level=3&cid=501538" class="ajax_tree2">Verse 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52566.Verse2" border=0 hspace=2><a id="href_52566.Verse2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962001&level=3&cid=501540" class="ajax_tree2">Verse 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52567.Verse3" border=0 hspace=2><a id="href_52567.Verse3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962019&level=3&cid=501548" class="ajax_tree2">Verse 3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52568.Verse4" border=0 hspace=2><a id="href_52568.Verse4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962026&level=3&cid=501552" class="ajax_tree2">Verse 4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52569.Verse5" border=0 hspace=2><a id="href_52569.Verse5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962037&level=3&cid=501560" class="ajax_tree2">Verse 5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52570.Verse6" border=0 hspace=2><a id="href_52570.Verse6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962046&level=3&cid=501566" class="ajax_tree2">Verse 6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52571.Verse7" border=0 hspace=2><a id="href_52571.Verse7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962077&level=3&cid=501577" class="ajax_tree2">Verse 7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52572.Verse8" border=0 hspace=2><a id="href_52572.Verse8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962093&level=3&cid=501582" class="ajax_tree2">Verse 8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52573.Verse9" border=0 hspace=2><a id="href_52573.Verse9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962113&level=3&cid=501589" class="ajax_tree2">Verse 9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52574.Verse10" border=0 hspace=2><a id="href_52574.Verse10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962126&level=3&cid=501594" class="ajax_tree2">Verse 10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52575.Verses11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52575.Verses11-20" border=0 hspace=2><a id="href_52575.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962204&level=2&cid=501612" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<div style="display:none;"  id="div_52575.Verses11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52576.Verse11" border=0 hspace=2><a id="href_52576.Verse11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962204&level=3&cid=501612" class="ajax_tree2">Verse 11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52577.Verse12" border=0 hspace=2><a id="href_52577.Verse12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962216&level=3&cid=501615" class="ajax_tree2">Verse 12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52578.Verse13" border=0 hspace=2><a id="href_52578.Verse13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962232&level=3&cid=501622" class="ajax_tree2">Verse 13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52579.Verse14" border=0 hspace=2><a id="href_52579.Verse14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962273&level=3&cid=501634" class="ajax_tree2">Verse 14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52580.Verse15" border=0 hspace=2><a id="href_52580.Verse15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962287&level=3&cid=501641" class="ajax_tree2">Verse 15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52581.Verse16" border=0 hspace=2><a id="href_52581.Verse16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962301&level=3&cid=501647" class="ajax_tree2">Verse 16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52582.Verse17" border=0 hspace=2><a id="href_52582.Verse17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962317&level=3&cid=501656" class="ajax_tree2">Verse 17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52583.Verse18" border=0 hspace=2><a id="href_52583.Verse18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962331&level=3&cid=501660" class="ajax_tree2">Verse 18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52584.Verse19" border=0 hspace=2><a id="href_52584.Verse19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962346&level=3&cid=501668" class="ajax_tree2">Verse 19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52585.Verse20" border=0 hspace=2><a id="href_52585.Verse20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962355&level=3&cid=501672" class="ajax_tree2">Verse 20
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52586.Verses21-30')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52586.Verses21-30" border=0 hspace=2><a id="href_52586.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962412&level=2&cid=501678" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<div style="display:none;"  id="div_52586.Verses21-30">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52587.Verse21" border=0 hspace=2><a id="href_52587.Verse21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962412&level=3&cid=501678" class="ajax_tree2">Verse 21
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52588.Verse22" border=0 hspace=2><a id="href_52588.Verse22" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962420&level=3&cid=501681" class="ajax_tree2">Verse 22
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52589.Verse23" border=0 hspace=2><a id="href_52589.Verse23" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962449&level=3&cid=501686" class="ajax_tree2">Verse 23
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52590.Verse24" border=0 hspace=2><a id="href_52590.Verse24" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962468&level=3&cid=501695" class="ajax_tree2">Verse 24
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52591.Verse25" border=0 hspace=2><a id="href_52591.Verse25" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962483&level=3&cid=501698" class="ajax_tree2">Verse 25
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52592.Verse26" border=0 hspace=2><a id="href_52592.Verse26" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962488&level=3&cid=501701" class="ajax_tree2">Verse 26
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52593.Verse27" border=0 hspace=2><a id="href_52593.Verse27" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962498&level=3&cid=501708" class="ajax_tree2">Verse 27
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52594.Verse28" border=0 hspace=2><a id="href_52594.Verse28" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962513&level=3&cid=501711" class="ajax_tree2">Verse 28
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52595.Verse29" border=0 hspace=2><a id="href_52595.Verse29" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962531&level=3&cid=501720" class="ajax_tree2">Verse 29
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52596.Verse30" border=0 hspace=2><a id="href_52596.Verse30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962578&level=3&cid=501733" class="ajax_tree2">Verse 30
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52597.Verses31-40')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52597.Verses31-40" border=0 hspace=2><a id="href_52597.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962628&level=2&cid=501742" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<div style="display:none;"  id="div_52597.Verses31-40">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52598.Verse31" border=0 hspace=2><a id="href_52598.Verse31" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962628&level=3&cid=501742" class="ajax_tree2">Verse 31
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52599.Verse32" border=0 hspace=2><a id="href_52599.Verse32" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962635&level=3&cid=501748" class="ajax_tree2">Verse 32
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52600.Verse33" border=0 hspace=2><a id="href_52600.Verse33" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962654&level=3&cid=501755" class="ajax_tree2">Verse 33
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52601.Verse34" border=0 hspace=2><a id="href_52601.Verse34" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962667&level=3&cid=501760" class="ajax_tree2">Verse 34
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52602.Verse35" border=0 hspace=2><a id="href_52602.Verse35" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962687&level=3&cid=501772" class="ajax_tree2">Verse 35
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52603.Verse36" border=0 hspace=2><a id="href_52603.Verse36" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962717&level=3&cid=501782" class="ajax_tree2">Verse 36
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52604.Verse37" border=0 hspace=2><a id="href_52604.Verse37" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962732&level=3&cid=501789" class="ajax_tree2">Verse 37
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52605.Verse38" border=0 hspace=2><a id="href_52605.Verse38" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962759&level=3&cid=501796" class="ajax_tree2">Verse 38
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52606.Verse39" border=0 hspace=2><a id="href_52606.Verse39" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962788&level=3&cid=501805" class="ajax_tree2">Verse 39
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52607.Verse40" border=0 hspace=2><a id="href_52607.Verse40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962853&level=3&cid=501819" class="ajax_tree2">Verse 40
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52608.Verses41-48')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52608.Verses41-48" border=0 hspace=2><a id="href_52608.Verses41-48" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962873&level=2&cid=501828" class="ajax_tree1">Verses 41-48
+</td></tr></table>
+<div style="display:none;"  id="div_52608.Verses41-48">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52609.Verse41" border=0 hspace=2><a id="href_52609.Verse41" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962873&level=3&cid=501828" class="ajax_tree2">Verse 41
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52610.Verse42" border=0 hspace=2><a id="href_52610.Verse42" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962886&level=3&cid=501835" class="ajax_tree2">Verse 42
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52611.Verse43" border=0 hspace=2><a id="href_52611.Verse43" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962943&level=3&cid=501844" class="ajax_tree2">Verse 43
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52612.Verse44" border=0 hspace=2><a id="href_52612.Verse44" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962996&level=3&cid=501851" class="ajax_tree2">Verse 44
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52613.Verse45" border=0 hspace=2><a id="href_52613.Verse45" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963043&level=3&cid=501858" class="ajax_tree2">Verse 45
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52614.Verse46" border=0 hspace=2><a id="href_52614.Verse46" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963071&level=3&cid=501865" class="ajax_tree2">Verse 46
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52615.Verse47" border=0 hspace=2><a id="href_52615.Verse47" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963084&level=3&cid=501874" class="ajax_tree2">Verse 47
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52616.Verse48" border=0 hspace=2><a id="href_52616.Verse48" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963100&level=3&cid=501883" class="ajax_tree2">Verse 48
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52617.ChapterII:Indriyanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52617.ChapterII:Indriyanirdeśa" border=0 hspace=2><a id="href_52617.ChapterII:Indriyanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963123&level=1&cid=501894" class="ajax_tree0">Chapter II: Indriyanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52617.ChapterII:Indriyanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52618.Verses1-10" border=0 hspace=2><a id="href_52618.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963128&level=2&cid=501897" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52619.Verses11-20" border=0 hspace=2><a id="href_52619.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963373&level=2&cid=501954" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52620.Verses21-30" border=0 hspace=2><a id="href_52620.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963562&level=2&cid=502040" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52621.Verses31-40" border=0 hspace=2><a id="href_52621.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963775&level=2&cid=502093" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52622.Verses41-50" border=0 hspace=2><a id="href_52622.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=964038&level=2&cid=502169" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52623.Verses51-60" border=0 hspace=2><a id="href_52623.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=964547&level=2&cid=502267" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52624.Verses61-70" border=0 hspace=2><a id="href_52624.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965023&level=2&cid=502351" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52625.Verses71-73" border=0 hspace=2><a id="href_52625.Verses71-73" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965286&level=2&cid=502444" class="ajax_tree1">Verses 71-73
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52626.ChapterIII:Lokanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52626.ChapterIII:Lokanirdeśa" border=0 hspace=2><a id="href_52626.ChapterIII:Lokanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965433&level=1&cid=502474" class="ajax_tree0">Chapter III: Lokanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52626.ChapterIII:Lokanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52627.Verses1-10" border=0 hspace=2><a id="href_52627.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965433&level=2&cid=502474" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52628.Verses11-20" border=0 hspace=2><a id="href_52628.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965738&level=2&cid=502543" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52629.Verses21-30" border=0 hspace=2><a id="href_52629.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966058&level=2&cid=502629" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52630.Verses31-40" border=0 hspace=2><a id="href_52630.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966466&level=2&cid=502703" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52631.Verses41-50" border=0 hspace=2><a id="href_52631.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966732&level=2&cid=502785" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52632.Verses51-60" border=0 hspace=2><a id="href_52632.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966940&level=2&cid=502834" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52633.Verses61-70" border=0 hspace=2><a id="href_52633.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967094&level=2&cid=502897" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52634.Verses71-80" border=0 hspace=2><a id="href_52634.Verses71-80" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967200&level=2&cid=502946" class="ajax_tree1">Verses 71-80
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52635.Verses81-90" border=0 hspace=2><a id="href_52635.Verses81-90" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967304&level=2&cid=502999" class="ajax_tree1">Verses 81-90
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52636.Verses91-100" border=0 hspace=2><a id="href_52636.Verses91-100" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967443&level=2&cid=503051" class="ajax_tree1">Verses 91-100
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52637.Verses101-102" border=0 hspace=2><a id="href_52637.Verses101-102" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967757&level=2&cid=503112" class="ajax_tree1">Verses 101-102
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52638.ChapterIV:Karmanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52638.ChapterIV:Karmanirdeśa" border=0 hspace=2><a id="href_52638.ChapterIV:Karmanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967790&level=1&cid=503127" class="ajax_tree0">Chapter IV: Karmanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52638.ChapterIV:Karmanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52639.Verses1-10" border=0 hspace=2><a id="href_52639.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967790&level=2&cid=503127" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52640.Verses11-20" border=0 hspace=2><a id="href_52640.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968145&level=2&cid=503207" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52641.Verses21-30" border=0 hspace=2><a id="href_52641.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968327&level=2&cid=503272" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52642.Verses31-40" border=0 hspace=2><a id="href_52642.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968472&level=2&cid=503324" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52643.Verses41-50" border=0 hspace=2><a id="href_52643.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968744&level=2&cid=503385" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52644.Verses51-60" border=0 hspace=2><a id="href_52644.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968901&level=2&cid=503437" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52645.Verses61-70" border=0 hspace=2><a id="href_52645.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969062&level=2&cid=503494" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52646.Verses71-80" border=0 hspace=2><a id="href_52646.Verses71-80" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969229&level=2&cid=503554" class="ajax_tree1">Verses 71-80
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52647.Verses81-90" border=0 hspace=2><a id="href_52647.Verses81-90" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969484&level=2&cid=503624" class="ajax_tree1">Verses 81-90
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52648.Verses91-100" border=0 hspace=2><a id="href_52648.Verses91-100" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969645&level=2&cid=503686" class="ajax_tree1">Verses 91-100
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52649.Verses101-110" border=0 hspace=2><a id="href_52649.Verses101-110" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969783&level=2&cid=503744" class="ajax_tree1">Verses 101-110
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52650.Verses111-120" border=0 hspace=2><a id="href_52650.Verses111-120" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969920&level=2&cid=503796" class="ajax_tree1">Verses 111-120
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52651.Verses121-127" border=0 hspace=2><a id="href_52651.Verses121-127" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970050&level=2&cid=503852" class="ajax_tree1">Verses 121-127
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52652.ChapterV:Anuśayanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52652.ChapterV:Anuśayanirdeśa" border=0 hspace=2><a id="href_52652.ChapterV:Anuśayanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970147&level=1&cid=503897" class="ajax_tree0">Chapter V: Anuśayanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52652.ChapterV:Anuśayanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52653.Verses1-10" border=0 hspace=2><a id="href_52653.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970152&level=2&cid=503900" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52654.Verses11-20" border=0 hspace=2><a id="href_52654.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970388&level=2&cid=503961" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52655.Verses21-30" border=0 hspace=2><a id="href_52655.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970521&level=2&cid=504014" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52656.Verses31-40" border=0 hspace=2><a id="href_52656.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970838&level=2&cid=504087" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52657.Verses41-50" border=0 hspace=2><a id="href_52657.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970989&level=2&cid=504141" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52658.Verses51-60" border=0 hspace=2><a id="href_52658.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971097&level=2&cid=504187" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52659.Verses61-70" border=0 hspace=2><a id="href_52659.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971233&level=2&cid=504262" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52660.ChapterVI:Mārgapudgalanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52660.ChapterVI:Mārgapudgalanirdeśa" border=0 hspace=2><a id="href_52660.ChapterVI:Mārgapudgalanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971384&level=1&cid=504326" class="ajax_tree0">Chapter VI: Mārgapudgalanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52660.ChapterVI:Mārgapudgalanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52661.Verses1-10" border=0 hspace=2><a id="href_52661.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971386&level=2&cid=504328" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52662.Verses11-20" border=0 hspace=2><a id="href_52662.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971713&level=2&cid=504398" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52663.Verses21-30" border=0 hspace=2><a id="href_52663.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971916&level=2&cid=504476" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52664.Verses31-40" border=0 hspace=2><a id="href_52664.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972104&level=2&cid=504547" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52665.Verses41-50" border=0 hspace=2><a id="href_52665.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972311&level=2&cid=504593" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52666.Verses51-60" border=0 hspace=2><a id="href_52666.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972508&level=2&cid=504657" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52667.Verses61-70" border=0 hspace=2><a id="href_52667.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972767&level=2&cid=504731" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52668.Verses71-79" border=0 hspace=2><a id="href_52668.Verses71-79" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972924&level=2&cid=504789" class="ajax_tree1">Verses 71-79
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52669.ChapterVII:Jñānanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52669.ChapterVII:Jñānanirdeśa" border=0 hspace=2><a id="href_52669.ChapterVII:Jñānanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973039&level=1&cid=504853" class="ajax_tree0">Chapter VII: Jñānanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52669.ChapterVII:Jñānanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52670.Verses1-10" border=0 hspace=2><a id="href_52670.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973043&level=2&cid=504856" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52671.Verses11-20" border=0 hspace=2><a id="href_52671.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973159&level=2&cid=504910" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52672.Verses21-30" border=0 hspace=2><a id="href_52672.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973433&level=2&cid=504991" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52673.Verses31-40" border=0 hspace=2><a id="href_52673.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973591&level=2&cid=505058" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52674.Verses41-50" border=0 hspace=2><a id="href_52674.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973747&level=2&cid=505134" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52675.Verses51-56" border=0 hspace=2><a id="href_52675.Verses51-56" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973915&level=2&cid=505211" class="ajax_tree1">Verses 51-56
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52676.ChapterVIII:Samāpattinirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52676.ChapterVIII:Samāpattinirdeśa" border=0 hspace=2><a id="href_52676.ChapterVIII:Samāpattinirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973999&level=1&cid=505260" class="ajax_tree0">Chapter VIII: Samāpattinirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52676.ChapterVIII:Samāpattinirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52677.Verses1-10" border=0 hspace=2><a id="href_52677.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974003&level=2&cid=505263" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52678.Verses11-20" border=0 hspace=2><a id="href_52678.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974272&level=2&cid=505338" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52679.Verses21-30" border=0 hspace=2><a id="href_52679.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974413&level=2&cid=505394" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52680.Verses31-39" border=0 hspace=2><a id="href_52680.Verses31-39" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974556&level=2&cid=505469" class="ajax_tree1">Verses 31-39
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52681.Verses40-43" border=0 hspace=2><a id="href_52681.Verses40-43" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974699&level=2&cid=505538" class="ajax_tree1">Verses 40-43
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52682.ChapterIX:Conclusions" border=0 hspace=2><a id="href_52682.ChapterIX:Conclusions" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974708&level=1&cid=505545" class="ajax_tree0">Chapter IX: Conclusions
+</td></tr></table>
+<script language=javascript>test('52678.Verses11-20|52676.ChapterVIII:Samāpattinirdeśa|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=511&amp;mid=974272&amp;level=2">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=511&amp;cid=505338&amp;mid=974272&amp;level=2">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=511&amp;cid=505338&amp;mid=974272&amp;level=2">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><div class='kilderef' id='5349481'></div><div class='clear'></div><span id='5349481bi' class='paragraph'>
+							<b>aṣṭāpakṣālamuktatvād āniñjaṃ tu caturthakam |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='5751539'></div><div class='clear'></div><span id='5751539bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='5764785'></div><div class='clear'></div><span id='5764785bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><div class='kilderef' id='4953190'></div><div class='clear'></div><span id='4953190bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><div class='kilderef' id='4939937'></div><div class='clear'></div><span id='4939937bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349482bi' class='paragraph'>
+							ke punas te ’pakṣālāḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751540bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764786bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953191bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939938bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349483bi' class='paragraph'>
+							<b>vitarkacārau śvāsau ca sukhādi ca catuṣṭayam</b> || 8.11 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751541bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764787bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953192bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939939bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349484bi' class='paragraph'>
+							vitarkavicārau sukhaduḥkhe saumanasyadaurmanasye śvāsapraśvāsāś ca |&nbsp;</span><span id='5349485bi' class='paragraph'>
+						 eṣām aṣṭānām eko ’py apakṣālaś caturthe nāsty atas tad āneñjyam uktam |&nbsp;</span><span id='5349486bi' class='paragraph'>
+						 vitarkavicāraprītisukhair akampanīyatvād āneñjyaṃ caturthaṃ dhyānaṃ sūtre nirvāta pradīpanidarśanādity apare |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751542bi' class='paragraph'>
+							.&nbsp;</span><span id='5751543bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751544bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764788bi' class='paragraph'>
+							.&nbsp;</span><span id='5764789bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764790bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953193bi' class='paragraph'>
+							.&nbsp;</span><span id='4953194bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953195bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939940bi' class='paragraph'>
+							&nbsp;</span><span id='4939941bi' class='paragraph'>
+						 &nbsp;</span><span id='4939942bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349487bi' class='paragraph'>
+							dvayor dhyānayoḥ saumanasyamuktaṃ prītivacanāt | tṛtīye sukhaṃ caturthe upekṣā |&nbsp;</span><span id='5349488bi' class='paragraph'>
+						 taskiṃ yā dhyānasamāpattiṣu vedanās tā eva dhyānopapattiṣu |&nbsp;</span><span id='5349489bi' class='paragraph'>
+						 nety āha | kiṃ tarhi |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751545bi' class='paragraph'>
+							.&nbsp;</span><span id='5751546bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751547bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764791bi' class='paragraph'>
+							.&nbsp;</span><span id='5764792bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764793bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953196bi' class='paragraph'>
+							.&nbsp;</span><span id='4953197bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953198bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939943bi' class='paragraph'>
+							&nbsp;</span><span id='4939944bi' class='paragraph'>
+						 &nbsp;</span><span id='4939945bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349490bi' class='paragraph'>
+							<b>saumanasyasukhopekṣā upekṣāsumanaskate |<br />sukhhopekṣe upekṣā pravido dhyānopapattiṣu</b> || 8.12 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751548bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764794bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953199bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939946bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349491bi' class='paragraph'>
+							prathamadhyānotpanno tisro vedanāḥ |&nbsp;</span><span id='5349492bi' class='paragraph'>
+						 sukhaṃ trivijñānakāyikaṃ saumanasyaṃ manobhūmikam |&nbsp;</span><span id='5349493bi' class='paragraph'>
+						 upekṣā caturvijñānakāyikī |&nbsp;</span><span id='5349494bi' class='paragraph'>
+						 dvitīyadhyānopapattau dve vedane saumanasyopekṣe manobhūmike |&nbsp;</span><span id='5349495bi' class='paragraph'>
+						 sukhaṃ nāsty asya vijñānakāyābhāvāt |&nbsp;</span><span id='5349496bi' class='paragraph'>
+						 tṛtīyadhyānopapattī dve vedane |&nbsp;</span><span id='5349497bi' class='paragraph'>
+						 sukhopekṣe manobhūmike | caturthadhyānopapattāv upekṣaiva |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751549bi' class='paragraph'>
+							.&nbsp;</span><span id='5751550bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751551bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751552bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751553bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751554bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751555bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764795bi' class='paragraph'>
+							.&nbsp;</span><span id='5764796bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764797bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764798bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764799bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764800bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764801bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953200bi' class='paragraph'>
+							.&nbsp;</span><span id='4953201bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953202bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953203bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953204bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953205bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953206bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939947bi' class='paragraph'>
+							&nbsp;</span><span id='4939948bi' class='paragraph'>
+						 &nbsp;</span><span id='4939949bi' class='paragraph'>
+						 &nbsp;</span><span id='4939950bi' class='paragraph'>
+						 &nbsp;</span><span id='4939951bi' class='paragraph'>
+						 &nbsp;</span><span id='4939952bi' class='paragraph'>
+						 &nbsp;</span><span id='4939953bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349498bi' class='paragraph'>
+							yadi dvitīyādiṣu dhyāneṣu trayo vijñānakāyā na saṃvidyante vitarkavicārau ca katham te paśyanti yāvat spṛśanti katham cāvijñapti samutthāpayanti |&nbsp;</span><span id='5349499bi' class='paragraph'>
+						 na vaikeṣūpapannānāṃ cakṣurvijñānādayona santi |&nbsp;</span><span id='5349500bi' class='paragraph'>
+						 na tu svabhūmikāḥ | kiṃ tarhi |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751556bi' class='paragraph'>
+							.&nbsp;</span><span id='5751557bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751558bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764802bi' class='paragraph'>
+							.&nbsp;</span><span id='5764803bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764804bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953207bi' class='paragraph'>
+							.&nbsp;</span><span id='4953208bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953209bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939954bi' class='paragraph'>
+							&nbsp;</span><span id='4939955bi' class='paragraph'>
+						 &nbsp;</span><span id='4939956bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349501bi' class='paragraph'>
+							<b>kāyākṣiśrotravijñānaṃ vijñaptyutthāpakaṃ ca yat |<br />dvitīyādau tadādyāptaṃ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751559bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764805bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953210bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939957bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349502bi' class='paragraph'>
+							prathamadhyānabhūmikaṃ cakṣuḥśrotrakāyavijñānaṃ vijñaptisamutthāpakaṃ ca dvitīyādiṣu ca dhyāneṣu saṃmukhīkurvanti |&nbsp;</span><span id='5349503bi' class='paragraph'>
+						 nirmāṇacittavadyena te paśyanti yāvad vijñapti samutthāpayanti |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751560bi' class='paragraph'>
+							.&nbsp;</span><span id='5751561bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764806bi' class='paragraph'>
+							.&nbsp;</span><span id='5764807bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953211bi' class='paragraph'>
+							.&nbsp;</span><span id='4953212bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939958bi' class='paragraph'>
+							&nbsp;</span><span id='4939959bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349504bi' class='paragraph'>
+							<b>akliṣṭāvyākṛtaṃ ca tat</b> || 8.13 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751562bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764808bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953213bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939960bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349505bi' class='paragraph'>
+							anivṛtāvyākṛtaṃ ca tat prathamadhyānabhūmikaṃ vijñānaṃ veditavyaṃ yatte saṃmukhīkurvanti |&nbsp;</span><span id='5349506bi' class='paragraph'>
+						 na kliṣṭaṃ vītarāgatvānna kuśalaṃ hīnatvād iti |&nbsp;</span><span id='5349507bi' class='paragraph'>
+						 avasitaṃ dhyānakāryam |&nbsp;</span><span id='5349508bi' class='paragraph'>
+						 atha śuddhakādīnāṃ dhyānārupyāṇāṃ kathaṃ lābhaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751563bi' class='paragraph'>
+							.&nbsp;</span><span id='5751564bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751565bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751566bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764809bi' class='paragraph'>
+							.&nbsp;</span><span id='5764810bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764811bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764812bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953214bi' class='paragraph'>
+							.&nbsp;</span><span id='4953215bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953216bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953217bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939961bi' class='paragraph'>
+							&nbsp;</span><span id='4939962bi' class='paragraph'>
+						 &nbsp;</span><span id='4939963bi' class='paragraph'>
+						 &nbsp;</span><span id='4939964bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349509bi' class='paragraph'>
+							<b>atadvān labhate śuddhaṃ vairāgyeṇopapattitaḥ |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751567bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764813bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953218bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939965bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349510bi' class='paragraph'>
+							asamanvāgatastena śuddhakaṃ dhayanam ārupyaṃ vā pratilabhate | adhobhūmivairāgyādvā |&nbsp;</span><span id='5349511bi' class='paragraph'>
+						 adhobhūmyupapattito vā | anyatra bhavāgrāt | na hi tasyopapattito lābhaḥ |&nbsp;</span><span id='5349512bi' class='paragraph'>
+						 atadvāniti kimartha samanvāgataḥ |&nbsp;</span><span id='5349513bi' class='paragraph'>
+						 śuddhakena prayogato ’pi nirvedhabhāgīyaṃ śuddhakaṃ pratilabhate parihāṇito vā hānabhāgīyam |&nbsp;</span><span id='5349514bi' class='paragraph'>
+						 ata evocyate “syāc chuddhakaṃ dhyānaṃ vairāgyeṇa pratilabheta vairāgyeṇa vijahyāt |&nbsp;</span><span id='5349515bi' class='paragraph'>
+						 evaṃ parihāṇyā copapattyā ca |&nbsp;</span><span id='5349516bi' class='paragraph'>
+						 syād dhānabhāgīyaṃ prathamaṃ dhayānam | taddhi kāmavairāgyeṇa labhyate |&nbsp;</span><span id='5349517bi' class='paragraph'>
+						 brahmalokavairāgyeṇa tyajyate |&nbsp;</span><span id='5349518bi' class='paragraph'>
+						 brahmalokavairāgyaparihāṇyā labhyate | kāmavairāgyaprahāṇyā tyajyate |&nbsp;</span><span id='5349519bi' class='paragraph'>
+						 upariṣṭādbrahmaloka utpadyamāno labhate |&nbsp;</span><span id='5349520bi' class='paragraph'>
+						 tasmāt punaḥ kāmadhātāvupapapadyamāno vijahātīti |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751568bi' class='paragraph'>
+							.&nbsp;</span><span id='5751569bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751570bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751571bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751572bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751573bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751574bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751575bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751576bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751577bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751578bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764814bi' class='paragraph'>
+							.&nbsp;</span><span id='5764815bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764816bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764817bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764818bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764819bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764820bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764821bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764822bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764823bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764824bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953219bi' class='paragraph'>
+							.&nbsp;</span><span id='4953220bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953221bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953222bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953223bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953224bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953225bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953226bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953227bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953228bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953229bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939966bi' class='paragraph'>
+							&nbsp;</span><span id='4939967bi' class='paragraph'>
+						 &nbsp;</span><span id='4939968bi' class='paragraph'>
+						 &nbsp;</span><span id='4939969bi' class='paragraph'>
+						 &nbsp;</span><span id='4939970bi' class='paragraph'>
+						 &nbsp;</span><span id='4939971bi' class='paragraph'>
+						 &nbsp;</span><span id='4939972bi' class='paragraph'>
+						 &nbsp;</span><span id='4939973bi' class='paragraph'>
+						 &nbsp;</span><span id='4939974bi' class='paragraph'>
+						 &nbsp;</span><span id='4939975bi' class='paragraph'>
+						 &nbsp;</span><span id='4939976bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349521bi' class='paragraph'>
+							<b>anāsravaṃ tu vairāgyāt</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751579bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764825bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953230bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939977bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349522bi' class='paragraph'>
+							atadvān labhate iti vartate |&nbsp;</span><span id='5349523bi' class='paragraph'>
+						 tadvāṃstu kṣayajñānato ’pyaśaikṣaṃ labhate indriyasaṃcārato ’pi śaikṣaśaikṣam |&nbsp;</span><span id='5349524bi' class='paragraph'>
+						 nanu ca niyāmā vakrāntito ’pyanāsravaṃ prathamato labhate |&nbsp;</span><span id='5349525bi' class='paragraph'>
+						 nāvaśyamānupūrvikeṇālābhāt | yathā tvavaśyaṃ labhate tathoktam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751580bi' class='paragraph'>
+							.&nbsp;</span><span id='5751581bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751582bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751583bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764826bi' class='paragraph'>
+							.&nbsp;</span><span id='5764827bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764828bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764829bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953231bi' class='paragraph'>
+							.&nbsp;</span><span id='4953232bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953233bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953234bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939978bi' class='paragraph'>
+							&nbsp;</span><span id='4939979bi' class='paragraph'>
+						 &nbsp;</span><span id='4939980bi' class='paragraph'>
+						 &nbsp;</span><span id='4939981bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349526bi' class='paragraph'>
+							<b>kliṣṭaṃ hānyupapattitaḥ</b> || 8.14 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751584bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764830bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953235bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939982bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349527bi' class='paragraph'>
+							atadvān labhata ityevānuvartate |&nbsp;</span><span id='5349528bi' class='paragraph'>
+						 parihāṇito yadi tadvairāgyāt parihīyate |&nbsp;</span><span id='5349529bi' class='paragraph'>
+						 upapattito yady uparibhūmer adharāyām upapadyate |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751585bi' class='paragraph'>
+							.&nbsp;</span><span id='5751586bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751587bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764831bi' class='paragraph'>
+							.&nbsp;</span><span id='5764832bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764833bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953236bi' class='paragraph'>
+							.&nbsp;</span><span id='4953237bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953238bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939983bi' class='paragraph'>
+							&nbsp;</span><span id='4939984bi' class='paragraph'>
+						 &nbsp;</span><span id='4939985bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349530bi' class='paragraph'>
+							katamasmāt samāpattidravyād anantaraṃ katy upapadyante |&nbsp;</span><span id='5349531bi' class='paragraph'>
+						 anāsravaprathamadhyānāntaraṃ ṣaḍ utpadyante |&nbsp;</span><span id='5349532bi' class='paragraph'>
+						 svabhūmike śuddhakānāsrave dvitīyatṛtīyadhyānabhūmike ca |&nbsp;</span><span id='5349533bi' class='paragraph'>
+						 ākiñcanyāyatanānantaraṃ sapta |&nbsp;</span><span id='5349534bi' class='paragraph'>
+						 svabhūmike śuddhakānāsrave vijñānākāśānantyāyatanabhūmike ca |&nbsp;</span><span id='5349535bi' class='paragraph'>
+						 bhavāgraṃ śuddhakam evānāsravābhāvāt | dvitīyadhyānāntaram aṣṭau |&nbsp;</span><span id='5349536bi' class='paragraph'>
+						 svabhūmike śuddhakānāsrave tṛtīyacaturthaprathamadhyānabhūmike ca |&nbsp;</span><span id='5349537bi' class='paragraph'>
+						 vijñānānantyāyatanānantaraṃ nava |&nbsp;</span><span id='5349538bi' class='paragraph'>
+						 svabhūmike dve ākāśānantyāyatanacaturthadhyānabhūmikāni catvāri ākiñcanyāyatanabhavāgrabhūmikāni trīṇīti |&nbsp;</span><span id='5349539bi' class='paragraph'>
+						 evam anyadhyānārupyānantaraṃ daśa dravyāṇi yojyāni |&nbsp;</span><span id='5349540bi' class='paragraph'>
+						 eṣa tu saṃkṣepaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751588bi' class='paragraph'>
+							.&nbsp;</span><span id='5751589bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751590bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751591bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751592bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751593bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751594bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751595bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751596bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751597bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751598bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764834bi' class='paragraph'>
+							.&nbsp;</span><span id='5764835bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764836bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764837bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764838bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764839bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764840bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764841bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764842bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764843bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764844bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953239bi' class='paragraph'>
+							.&nbsp;</span><span id='4953240bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953241bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953242bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953243bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953244bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953245bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953246bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953247bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953248bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953249bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939986bi' class='paragraph'>
+							&nbsp;</span><span id='4939987bi' class='paragraph'>
+						 &nbsp;</span><span id='4939988bi' class='paragraph'>
+						 &nbsp;</span><span id='4939989bi' class='paragraph'>
+						 &nbsp;</span><span id='4939990bi' class='paragraph'>
+						 &nbsp;</span><span id='4939991bi' class='paragraph'>
+						 &nbsp;</span><span id='4939992bi' class='paragraph'>
+						 &nbsp;</span><span id='4939993bi' class='paragraph'>
+						 &nbsp;</span><span id='4939994bi' class='paragraph'>
+						 &nbsp;</span><span id='4939995bi' class='paragraph'>
+						 &nbsp;</span><span id='4939996bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349541bi' class='paragraph'>
+							<b>tṛtīyād yāvad ūrdhvādho ’nāsravānantaraṃ śubham |<br />utpadyate</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751599bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764845bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953250bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939997bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349542bi' class='paragraph'>
+							śubhagrahaṇena śuddhamanāsravaṃ ca gṛhyate kuśalatvāt anāsravasya samāpatti dravyasyānantaraṃ svabhūmike ca śuddhānāsrave utpadyete |&nbsp;</span><span id='5349543bi' class='paragraph'>
+						 ūrdhvādhobhūmike ca tṛtīvādyāvat |&nbsp;</span><span id='5349544bi' class='paragraph'>
+						 vyutkrāntakasamāpattāro hi tṛtīyāt pareṇa laṅghayituṃ notsahante |&nbsp;</span><span id='5349545bi' class='paragraph'>
+						 anvayajñānānantaraṃ cārupyān samāpadyante na dharmajñānānantaram |&nbsp;</span><span id='5349546bi' class='paragraph'>
+						 tasyādharāśrayālambanatvād iti |&nbsp;</span><span id='5349547bi' class='paragraph'>
+						 yathā cānāsravād anantaramuktam veditavyam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751600bi' class='paragraph'>
+							.&nbsp;</span><span id='5751601bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751602bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751603bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751604bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751605bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764846bi' class='paragraph'>
+							.&nbsp;</span><span id='5764847bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764848bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764849bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764850bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764851bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953251bi' class='paragraph'>
+							.&nbsp;</span><span id='4953252bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953253bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953254bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953255bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953256bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4939998bi' class='paragraph'>
+							&nbsp;</span><span id='4939999bi' class='paragraph'>
+						 &nbsp;</span><span id='4940000bi' class='paragraph'>
+						 &nbsp;</span><span id='4940001bi' class='paragraph'>
+						 &nbsp;</span><span id='4940002bi' class='paragraph'>
+						 &nbsp;</span><span id='4940003bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349548bi' class='paragraph'>
+							<b>tathā śuddhāt kliṭaṃ cāpi svabhūmikam</b> || 8.15 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751606bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764852bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953257bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940004bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349549bi' class='paragraph'>
+							svabhūmikaṃ kliṣṭamadhikaṃ śuddhakādanantaramutpadyate | śeṣaṃ yathaivānāsravāt |&nbsp;</span><span id='5349550bi' class='paragraph'>
+						 anāsravasya hi samanantaraṃ kliṣṭotpattir nāstīti |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751607bi' class='paragraph'>
+							.&nbsp;</span><span id='5751608bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764853bi' class='paragraph'>
+							.&nbsp;</span><span id='5764854bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953258bi' class='paragraph'>
+							.&nbsp;</span><span id='4953259bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940005bi' class='paragraph'>
+							&nbsp;</span><span id='4940006bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349551bi' class='paragraph'>
+							<b>kliṣṭāt svaṃ śuddhakaṃ kliṣṭaṃ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751609bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764855bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953260bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940007bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349552bi' class='paragraph'>
+							kliṣṭātsamāpattidravyādanantaraṃ svabhūmike śuddhakakliṣṭe utpadyete |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751610bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764856bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953261bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940008bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349553bi' class='paragraph'>
+							<b>evaṃ cādharaśuddhakam |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751611bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764857bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953262bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940009bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349554bi' class='paragraph'>
+							kleśotpīḍito hy adharam api samāpattiṃ śuddhakaṃ bahu manyate |&nbsp;</span><span id='5349555bi' class='paragraph'>
+						 yadi kliṣṭaṃ paricchidyādhaḥ saṃcarati |&nbsp;</span><span id='5349556bi' class='paragraph'>
+						 kuśalāt saṃcarito bhavati na kliṣṭāt | athāparicchidya kathaṃ saṃcarati |&nbsp;</span><span id='5349557bi' class='paragraph'>
+						 pūrvāvedhāt pūrvaṃ hi sa evaṅkāmo bhavati varamadhastāt śuddhakaṃ nopariṣṭāt kliṣṭam iti |&nbsp;</span><span id='5349558bi' class='paragraph'>
+						 pūrvābhiprāyaṃ ca saṃtatiranuvartate sattvānām |&nbsp;</span><span id='5349559bi' class='paragraph'>
+						 praṇidhāya suptasyābhipretakālaprabodhavat |&nbsp;</span><span id='5349560bi' class='paragraph'>
+						 anāsravaṃ tu kliṣṭādanantaraṃ sarvathā notpadyate |&nbsp;</span><span id='5349561bi' class='paragraph'>
+						 samāpattikālaṃ pratyetad uktam |&nbsp;</span><span id='5349562bi' class='paragraph'>
+						 śuddhakāt kliṣṭāc ca samanantaraṃ svabhūmikameva kliṣṭamutpadyate nānyabhūmikam iti |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751612bi' class='paragraph'>
+							.&nbsp;</span><span id='5751613bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751614bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751615bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751616bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751617bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751618bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751619bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751620bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764858bi' class='paragraph'>
+							.&nbsp;</span><span id='5764859bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764860bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764861bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764862bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764863bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764864bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764865bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764866bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953263bi' class='paragraph'>
+							.&nbsp;</span><span id='4953264bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953265bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953266bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953267bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953268bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953269bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953270bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953271bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940010bi' class='paragraph'>
+							&nbsp;</span><span id='4940011bi' class='paragraph'>
+						 &nbsp;</span><span id='4940012bi' class='paragraph'>
+						 &nbsp;</span><span id='4940013bi' class='paragraph'>
+						 &nbsp;</span><span id='4940014bi' class='paragraph'>
+						 &nbsp;</span><span id='4940015bi' class='paragraph'>
+						 &nbsp;</span><span id='4940016bi' class='paragraph'>
+						 &nbsp;</span><span id='4940017bi' class='paragraph'>
+						 &nbsp;</span><span id='4940018bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349563bi' class='paragraph'>
+							<b>cyutau tu śuddhakāt kliṣṭaṃ sarvaṃ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751621bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764867bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953272bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940019bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349564bi' class='paragraph'>
+							cyutikāle tu upapattilābhikāc chuddhakād anantaraṃ sarvabhūmikaṃ kliṣṭam utpadyate |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751622bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764868bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953273bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940020bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349565bi' class='paragraph'>
+							<b>kliṣṭāt tu nottaram</b> || 8.16 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751623bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764869bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953274bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940021bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349566bi' class='paragraph'>
+							kliṣṭāt tu dhyānārūpyād anantaraṃ cyutikāle svādharabhūmikaṃ kliṣṭam utpadyate |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751624bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764870bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953275bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940022bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349567bi' class='paragraph'>
+							nordhvabhūmikam |&nbsp;</span><span id='5349568bi' class='paragraph'>
+						 na ca sarvasmāc chuddhakādanāśravaṃ samāpattidravyam utpadyate |&nbsp;</span><span id='5349569bi' class='paragraph'>
+						 kiṃ tarhi |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751625bi' class='paragraph'>
+							.&nbsp;</span><span id='5751626bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751627bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764871bi' class='paragraph'>
+							.&nbsp;</span><span id='5764872bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764873bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953276bi' class='paragraph'>
+							.&nbsp;</span><span id='4953277bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953278bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940023bi' class='paragraph'>
+							&nbsp;</span><span id='4940024bi' class='paragraph'>
+						 &nbsp;</span><span id='4940025bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349570bi' class='paragraph'>
+							<b>caturdhā śuddhakaṃ hānabhāgīyādi</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751628bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764874bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953279bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940026bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349571bi' class='paragraph'>
+							hānabhāgīyaṃ viśeṣabhāgīyaṃ sthitibhāgīyaṃ nirvedhabhāgīyamciti caturvidhaṃ śuddhakam |&nbsp;</span><span id='5349572bi' class='paragraph'>
+						 bhavāgraṃ tu trividhamcanyatra viśeṣabhāgīyāt | kimcasya lakṣaṇam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751629bi' class='paragraph'>
+							.&nbsp;</span><span id='5751630bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764875bi' class='paragraph'>
+							.&nbsp;</span><span id='5764876bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953280bi' class='paragraph'>
+							.&nbsp;</span><span id='4953281bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940027bi' class='paragraph'>
+							&nbsp;</span><span id='4940028bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349573bi' class='paragraph'>
+							<b>yathākramam |<br />kleśotpattisvabhūmyūrdhvānāsravānuguṇaṃ hi tat</b> || 8.17 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751631bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764877bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953282bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940029bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349574bi' class='paragraph'>
+							kleśotpattyanuguṇaṃ hānabhāgīyaṃ svabhūmyanuguṇaṃ sthitibhāgīyamūrdhnabhūmyanuguṇaṃ viśeṣabhāgīyam anāsravānuguṇaṃ nirvedhabhāgīyam |&nbsp;</span><span id='5349575bi' class='paragraph'>
+						 tasmād anāsravam utpadyate |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751632bi' class='paragraph'>
+							.&nbsp;</span><span id='5751633bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764878bi' class='paragraph'>
+							.&nbsp;</span><span id='5764879bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953283bi' class='paragraph'>
+							.&nbsp;</span><span id='4953284bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940030bi' class='paragraph'>
+							&nbsp;</span><span id='4940031bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349576bi' class='paragraph'>
+							athaiṣāṃ caturṇā kati kasmād anantaram utpadyante |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751634bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764880bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953285bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940032bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349577bi' class='paragraph'>
+							<b>dve trīṇi trīṇi caikaṃ ca hāna bhāgādyanantaram |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751635bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764881bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953286bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940033bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349578bi' class='paragraph'>
+							hānabhāgīyaṃ hānabhāk | tasmād anantaraṃ dve utpadyete | hānisthitibhāgīye |&nbsp;</span><span id='5349579bi' class='paragraph'>
+						 sthitibhāgīyānantaraṃ trīṇy anyatra nirvedhabhāgīyāt |&nbsp;</span><span id='5349580bi' class='paragraph'>
+						 viśeṣabhāgīyād anantaraṃ trīṇy anyatra hānabhāgīyāt nirvedhabhāgīyād anantaraṃ tad evaikam iti |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751636bi' class='paragraph'>
+							.&nbsp;</span><span id='5751637bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751638bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764882bi' class='paragraph'>
+							.&nbsp;</span><span id='5764883bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764884bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953287bi' class='paragraph'>
+							.&nbsp;</span><span id='4953288bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953289bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940034bi' class='paragraph'>
+							&nbsp;</span><span id='4940035bi' class='paragraph'>
+						 &nbsp;</span><span id='4940036bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349581bi' class='paragraph'>
+							kathaṃ vyutkrāntakasamāpattir utpadyate |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751639bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764885bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953290bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940037bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349582bi' class='paragraph'>
+							<b>gatvāgamya dvidhā bhūmīraṣṭau śliṣṭaikalaṅghitāḥ</b> || 8.18 ||<br /><b>vyutkrāntakasamāpattirvisabhāgatṛtīyagā |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751640bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764886bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953291bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940038bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349583bi' class='paragraph'>
+							gatvety anulomaṃ samāpadya | āgamyeti pratilomaṃ samāpadya |&nbsp;</span><span id='5349584bi' class='paragraph'>
+						 dvidheti sāsravānāsravā bhūmīḥ |&nbsp;</span><span id='5349585bi' class='paragraph'>
+						 aṣṭāv iti dhyānārupyasamāpattīḥ | śliṣṭā ity anukrameṇa |&nbsp;</span><span id='5349586bi' class='paragraph'>
+						 ekalaṅghitā ity ekām ekām utkramya |&nbsp;</span><span id='5349587bi' class='paragraph'>
+						 sāsravā aṣṭau bhūmir anulomapratilomasamāpattito nirjitya anāsravāś ca sapta |&nbsp;</span><span id='5349588bi' class='paragraph'>
+						 paścāt sāsravāt prathamād dhyānāt sāsravaṃ tṛtīyaṃ samāpadyate |&nbsp;</span><span id='5349589bi' class='paragraph'>
+						 tasmād ākāśānantyāyatanaṃ tasmād ākiṃcanyāyatanam |&nbsp;</span><span id='5349590bi' class='paragraph'>
+						 evaṃ punaḥ pratilomaṃ nirjitya anāsravā apy ekalaṅghitā anulomapratilomaṃ ca samāpadyate |&nbsp;</span><span id='5349591bi' class='paragraph'>
+						 ayaṃ prayogo vyutkrāntakasamāpatteḥ |&nbsp;</span><span id='5349592bi' class='paragraph'>
+						 yadā tu prathamātsāsravāt tṛtīyamanāsravaṃ dhyānaṃ samāpadyate tasmāt sāsravamākāśānantyāyatanaṃ tasmād anāsravamākiñcanyāyatanam |&nbsp;</span><span id='5349593bi' class='paragraph'>
+						 evaṃ punaḥ pratilomam | tadā visabhāgatṛtīyadravyagamanādabhiniṣpannā bhavati |&nbsp;</span><span id='5349594bi' class='paragraph'>
+						 ativiprakṛṣṭatvān na caturthī samāpadyate |&nbsp;</span><span id='5349595bi' class='paragraph'>
+						 tāṃ ca triṣu dvīpeṣu asamayavimukta evārhann utpādayati |&nbsp;</span><span id='5349596bi' class='paragraph'>
+						 niḥkleśatvāt samādhivaśitvāc ca |&nbsp;</span><span id='5349597bi' class='paragraph'>
+						 dṛṣṭiprāptasya yady api tīkṣṇendriyatvāt samādhau vaśitvaṃ na tu niṣkleśaḥ |&nbsp;</span><span id='5349598bi' class='paragraph'>
+						 samayavimukto yady api niḥkleśo natvasya samādhau vaśitvam iti |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751641bi' class='paragraph'>
+							.&nbsp;</span><span id='5751642bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751643bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751644bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751645bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751646bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751647bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751648bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751649bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751650bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751651bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751652bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751653bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751654bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751655bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751656bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764887bi' class='paragraph'>
+							.&nbsp;</span><span id='5764888bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764889bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764890bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764891bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764892bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764893bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764894bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764895bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764896bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764897bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764898bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764899bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764900bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764901bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764902bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953292bi' class='paragraph'>
+							.&nbsp;</span><span id='4953293bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953294bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953295bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953296bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953297bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953298bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953299bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953300bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953301bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953302bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953303bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953304bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953305bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953306bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953307bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940039bi' class='paragraph'>
+							&nbsp;</span><span id='4940040bi' class='paragraph'>
+						 &nbsp;</span><span id='4940041bi' class='paragraph'>
+						 &nbsp;</span><span id='4940042bi' class='paragraph'>
+						 &nbsp;</span><span id='4940043bi' class='paragraph'>
+						 &nbsp;</span><span id='4940044bi' class='paragraph'>
+						 &nbsp;</span><span id='4940045bi' class='paragraph'>
+						 &nbsp;</span><span id='4940046bi' class='paragraph'>
+						 &nbsp;</span><span id='4940047bi' class='paragraph'>
+						 &nbsp;</span><span id='4940048bi' class='paragraph'>
+						 &nbsp;</span><span id='4940049bi' class='paragraph'>
+						 &nbsp;</span><span id='4940050bi' class='paragraph'>
+						 &nbsp;</span><span id='4940051bi' class='paragraph'>
+						 &nbsp;</span><span id='4940052bi' class='paragraph'>
+						 &nbsp;</span><span id='4940053bi' class='paragraph'>
+						 &nbsp;</span><span id='4940054bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349599bi' class='paragraph'>
+							kenāśrayeṇa kati dhyānārupyāḥ saṃmukhīkriyante |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751657bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764903bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953308bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940055bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349600bi' class='paragraph'>
+							<b>svādhobhūmyāśrayā eva</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751658bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764904bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953309bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940056bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349601bi' class='paragraph'>
+							dhyānāśrayā eva&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751659bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764905bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953310bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940057bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349602bi' class='paragraph'>
+							<b>dhyānārūpyāḥ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751660bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764906bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953311bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940058bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349603bi' class='paragraph'>
+							bhavāgraṃ bhavāgre ca saṃmukhīkriyate adhaś ca yāvat kāmadhātau |&nbsp;</span><span id='5349604bi' class='paragraph'>
+						 śeṣāṇi svasyāṃ bhūmāv adhaś ceti |&nbsp;</span><span id='5349605bi' class='paragraph'>
+						 kiṃ kāraṇam ūrdhvopapanno nādharāṃ samāpatti saṃmukhīkaroti |&nbsp;</span><span id='5349606bi' class='paragraph'>
+						 tasmāt tasya&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751661bi' class='paragraph'>
+							.&nbsp;</span><span id='5751662bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751663bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751664bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764907bi' class='paragraph'>
+							.&nbsp;</span><span id='5764908bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764909bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764910bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953312bi' class='paragraph'>
+							.&nbsp;</span><span id='4953313bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953314bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953315bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940059bi' class='paragraph'>
+							&nbsp;</span><span id='4940060bi' class='paragraph'>
+						 &nbsp;</span><span id='4940061bi' class='paragraph'>
+						 &nbsp;</span><span id='4940062bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349607bi' class='paragraph'>
+							<b>vṛthā ’dharam</b> || 8.19 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751665bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764911bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953316bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940063bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349608bi' class='paragraph'>
+							na hi tasyādhareṇa samāpattidravyeṇa kiñcit prayojanaṃ vidhīyate |&nbsp;</span><span id='5349609bi' class='paragraph'>
+						 nihīnatvāt |&nbsp;</span><span id='5349610bi' class='paragraph'>
+						 utsarga kṛtvā ’pavādaṃ karoti&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751666bi' class='paragraph'>
+							.&nbsp;</span><span id='5751667bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751668bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764912bi' class='paragraph'>
+							.&nbsp;</span><span id='5764913bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764914bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953317bi' class='paragraph'>
+							.&nbsp;</span><span id='4953318bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953319bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940064bi' class='paragraph'>
+							&nbsp;</span><span id='4940065bi' class='paragraph'>
+						 &nbsp;</span><span id='4940066bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349611bi' class='paragraph'>
+							<b>āryākiñcanyasāṃmukhyāt bhavāgre tv āsravakṣayaḥ |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751669bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764915bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953320bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940067bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349612bi' class='paragraph'>
+							bhavāgre tūpapannasyānāsravākiñcanyāyatanasaṃmukhībhāvādāsravakṣayo bhavati |&nbsp;</span><span id='5349613bi' class='paragraph'>
+						 kathaṃ tatropapannasya tatsaṃmukhībhāvaḥ |&nbsp;</span><span id='5349614bi' class='paragraph'>
+						 svasyābhāvāttasya cābhyāsāt |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751670bi' class='paragraph'>
+							.&nbsp;</span><span id='5751671bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751672bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764916bi' class='paragraph'>
+							.&nbsp;</span><span id='5764917bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764918bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953321bi' class='paragraph'>
+							.&nbsp;</span><span id='4953322bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953323bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940068bi' class='paragraph'>
+							&nbsp;</span><span id='4940069bi' class='paragraph'>
+						 &nbsp;</span><span id='4940070bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349615bi' class='paragraph'>
+							athaiṣāṃ dhyānārūpyāṇāṃ kim ālambanam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751673bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764919bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953324bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940071bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349616bi' class='paragraph'>
+							<b>satṛṣṇāḥ svabhavālambāḥ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751674bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764920bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953325bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940072bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349617bi' class='paragraph'>
+							āsvādanāsaṃprayuktāḥ svabhūmikaṃ bhavam ālambante | bhavagrahaṇena sāsravaṃ vastu gṛhyate |&nbsp;</span><span id='5349618bi' class='paragraph'>
+						 nādharamālambante vītarāgatvān nottaraṃ tṛṣṇāparichinnatvāt bhūmīnām |&nbsp;</span><span id='5349619bi' class='paragraph'>
+						 nānāsravaṃ kuśalatvaprasaṅgāditi |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751675bi' class='paragraph'>
+							.&nbsp;</span><span id='5751676bi' class='paragraph'>
+						 .&nbsp;</span><span id='5751677bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764921bi' class='paragraph'>
+							.&nbsp;</span><span id='5764922bi' class='paragraph'>
+						 .&nbsp;</span><span id='5764923bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953326bi' class='paragraph'>
+							.&nbsp;</span><span id='4953327bi' class='paragraph'>
+						 .&nbsp;</span><span id='4953328bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940073bi' class='paragraph'>
+							&nbsp;</span><span id='4940074bi' class='paragraph'>
+						 &nbsp;</span><span id='4940075bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349620bi' class='paragraph'>
+							<b>dhyānaṃ sadviṣayaṃ śubham</b> || 8.20 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751678bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764924bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953329bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940076bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5349621bi' class='paragraph'>
+							kuśalaṃ dhyānaṃ śubhakamanāsravaṃ ca | tat sarvālambanaṃ yatkiñcidasti saṃskṛtamasaṃskṛtaṃ vā |&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "5349481";
+							kilderef = "Akbh San: Pradhan (1967)  441,13 - San: Pradhan (1967) 447,7";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5751679bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "5751539";
+							kilderef = "Akbh Chi: 真諦 Zhēndì 563-568 A.D. T.1559 173a5  - Chi: 真諦 Zhēndì 563-568 A.D. T.1559 ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5764925bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "5764785";
+							kilderef = "Akbh Chi: 玄奘 Xuánzàng 651 A.D. T 1558 22a15  - Chi: 玄奘 Xuánzàng 651 A.D. T 1558 ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4953330bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "4953190";
+							kilderef = "Akbh Tib: Jinamitra/dPal brtsegs, ca. A.D. 800, Tg, mṅon pa, ku 59b7  - Tib: Jinamitra/dPal brtsegs, ca. A.D. 800, Tg, mṅon pa, ku ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4940077bi' class='paragraph'>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "4939937";
+							kilderef = "Akbh Uigh: ca. A.D. 900, Stockholm MS  - Uigh: ca. A.D. 900, Stockholm MS ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=bd251d0c-f0ba-11e4-bbf3-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>

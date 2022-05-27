@@ -1,0 +1,463 @@
+id: IE789E109
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T20:01:19.067227'
+last_modified: '2022-05-27T20:01:19.067246'
+parser: null
+source_metadata:
+  title: 'Vasubandhu: Abhidharmakośabhāṣya'
+  language: zh
+  base:
+    fB787:
+      title: Title
+      base_file: fB787.txt
+      order: 1
+    f5ED6:
+      title: Preface
+      base_file: f5ED6.txt
+      order: 2
+    fF889:
+      title: CI_Verse 1
+      base_file: fF889.txt
+      order: 3
+    f47B2:
+      title: CI_Verse 2
+      base_file: f47B2.txt
+      order: 4
+    fBA51:
+      title: CI_Verse 3
+      base_file: fBA51.txt
+      order: 5
+    f259A:
+      title: CI_Verse 4
+      base_file: f259A.txt
+      order: 6
+    fBB9B:
+      title: CI_Verse 5
+      base_file: fBB9B.txt
+      order: 7
+    f90D0:
+      title: CI_Verse 6
+      base_file: f90D0.txt
+      order: 8
+    f44DA:
+      title: CI_Verse 7
+      base_file: f44DA.txt
+      order: 9
+    f3096:
+      title: CI_Verse 8
+      base_file: f3096.txt
+      order: 10
+    fF2F1:
+      title: CI_Verse 9
+      base_file: fF2F1.txt
+      order: 11
+    f0559:
+      title: CI_Verse 10
+      base_file: f0559.txt
+      order: 12
+    f0288:
+      title: CI_Verse 11
+      base_file: f0288.txt
+      order: 13
+    f94EC:
+      title: CI_Verse 12
+      base_file: f94EC.txt
+      order: 14
+    f5407:
+      title: CI_Verse 13
+      base_file: f5407.txt
+      order: 15
+    fB318:
+      title: CI_Verse 14
+      base_file: fB318.txt
+      order: 16
+    f8F77:
+      title: CI_Verse 15
+      base_file: f8F77.txt
+      order: 17
+    fEC20:
+      title: CI_Verse 16
+      base_file: fEC20.txt
+      order: 18
+    f6B91:
+      title: CI_Verse 17
+      base_file: f6B91.txt
+      order: 19
+    f60C1:
+      title: CI_Verse 18
+      base_file: f60C1.txt
+      order: 20
+    f558B:
+      title: CI_Verse 19
+      base_file: f558B.txt
+      order: 21
+    f7BE8:
+      title: CI_Verse 20
+      base_file: f7BE8.txt
+      order: 22
+    fEB7B:
+      title: CI_Verse 21
+      base_file: fEB7B.txt
+      order: 23
+    fDAAF:
+      title: CI_Verse 22
+      base_file: fDAAF.txt
+      order: 24
+    f8431:
+      title: CI_Verse 23
+      base_file: f8431.txt
+      order: 25
+    f53F4:
+      title: CI_Verse 24
+      base_file: f53F4.txt
+      order: 26
+    f6E4B:
+      title: CI_Verse 25
+      base_file: f6E4B.txt
+      order: 27
+    fF793:
+      title: CI_Verse 26
+      base_file: fF793.txt
+      order: 28
+    f8CA1:
+      title: CI_Verse 27
+      base_file: f8CA1.txt
+      order: 29
+    f4816:
+      title: CI_Verse 28
+      base_file: f4816.txt
+      order: 30
+    fEBBF:
+      title: CI_Verse 29
+      base_file: fEBBF.txt
+      order: 31
+    f717C:
+      title: CI_Verse 30
+      base_file: f717C.txt
+      order: 32
+    f86D0:
+      title: CI_Verse 31
+      base_file: f86D0.txt
+      order: 33
+    f5C54:
+      title: CI_Verse 32
+      base_file: f5C54.txt
+      order: 34
+    fA322:
+      title: CI_Verse 33
+      base_file: fA322.txt
+      order: 35
+    f39DA:
+      title: CI_Verse 34
+      base_file: f39DA.txt
+      order: 36
+    f8C3A:
+      title: CI_Verse 35
+      base_file: f8C3A.txt
+      order: 37
+    f19E8:
+      title: CI_Verse 36
+      base_file: f19E8.txt
+      order: 38
+    fF083:
+      title: CI_Verse 37
+      base_file: fF083.txt
+      order: 39
+    fC1B6:
+      title: CI_Verse 38
+      base_file: fC1B6.txt
+      order: 40
+    fEE48:
+      title: CI_Verse 39
+      base_file: fEE48.txt
+      order: 41
+    f49CD:
+      title: CI_Verse 40
+      base_file: f49CD.txt
+      order: 42
+    fEE60:
+      title: CI_Verse 41
+      base_file: fEE60.txt
+      order: 43
+    f7AAC:
+      title: CI_Verse 42
+      base_file: f7AAC.txt
+      order: 44
+    fE263:
+      title: CI_Verse 43
+      base_file: fE263.txt
+      order: 45
+    f2890:
+      title: CI_Verse 44
+      base_file: f2890.txt
+      order: 46
+    fD602:
+      title: CI_Verse 45
+      base_file: fD602.txt
+      order: 47
+    fC77E:
+      title: CI_Verse 46
+      base_file: fC77E.txt
+      order: 48
+    f4448:
+      title: CI_Verse 47
+      base_file: f4448.txt
+      order: 49
+    f1127:
+      title: CI_Verse 48
+      base_file: f1127.txt
+      order: 50
+    f6E4C:
+      title: CII_Verses 1-10
+      base_file: f6E4C.txt
+      order: 51
+    fBBED:
+      title: CII_Verses 11-20
+      base_file: fBBED.txt
+      order: 52
+    f0389:
+      title: CII_Verses 21-30
+      base_file: f0389.txt
+      order: 53
+    f22DB:
+      title: CII_Verses 31-40
+      base_file: f22DB.txt
+      order: 54
+    fB24C:
+      title: CII_Verses 41-50
+      base_file: fB24C.txt
+      order: 55
+    f9585:
+      title: CII_Verses 51-60
+      base_file: f9585.txt
+      order: 56
+    fA95A:
+      title: CII_Verses 61-70
+      base_file: fA95A.txt
+      order: 57
+    fC234:
+      title: CII_Verses 71-73
+      base_file: fC234.txt
+      order: 58
+    f4A3B:
+      title: CIII_Verses 1-10
+      base_file: f4A3B.txt
+      order: 59
+    f1F3D:
+      title: CIII_Verses 11-20
+      base_file: f1F3D.txt
+      order: 60
+    f40A5:
+      title: CIII_Verses 21-30
+      base_file: f40A5.txt
+      order: 61
+    f2408:
+      title: CIII_Verses 31-40
+      base_file: f2408.txt
+      order: 62
+    f0A72:
+      title: CIII_Verses 41-50
+      base_file: f0A72.txt
+      order: 63
+    f4ED8:
+      title: CIII_Verses 51-60
+      base_file: f4ED8.txt
+      order: 64
+    f8387:
+      title: CIII_Verses 61-70
+      base_file: f8387.txt
+      order: 65
+    f007B:
+      title: CIII_Verses 71-80
+      base_file: f007B.txt
+      order: 66
+    fA3C2:
+      title: CIII_Verses 81-90
+      base_file: fA3C2.txt
+      order: 67
+    f5049:
+      title: CIII_Verses 91-100
+      base_file: f5049.txt
+      order: 68
+    fDDFD:
+      title: CIII_Verses 101-102
+      base_file: fDDFD.txt
+      order: 69
+    f8B9F:
+      title: CIV_Verses 1-10
+      base_file: f8B9F.txt
+      order: 70
+    f006A:
+      title: CIV_Verses 11-20
+      base_file: f006A.txt
+      order: 71
+    f39D7:
+      title: CIV_Verses 21-30
+      base_file: f39D7.txt
+      order: 72
+    f7CB7:
+      title: CIV_Verses 31-40
+      base_file: f7CB7.txt
+      order: 73
+    fB0C0:
+      title: CIV_Verses 41-50
+      base_file: fB0C0.txt
+      order: 74
+    f8B12:
+      title: CIV_Verses 51-60
+      base_file: f8B12.txt
+      order: 75
+    f222A:
+      title: CIV_Verses 61-70
+      base_file: f222A.txt
+      order: 76
+    f78FC:
+      title: CIV_Verses 71-80
+      base_file: f78FC.txt
+      order: 77
+    f5280:
+      title: CIV_Verses 81-90
+      base_file: f5280.txt
+      order: 78
+    f944E:
+      title: CIV_Verses 91-100
+      base_file: f944E.txt
+      order: 79
+    f476E:
+      title: CIV_Verses 101-110
+      base_file: f476E.txt
+      order: 80
+    f6253:
+      title: CIV_Verses 111-120
+      base_file: f6253.txt
+      order: 81
+    f188A:
+      title: CIV_Verses 121-127
+      base_file: f188A.txt
+      order: 82
+    f0353:
+      title: CV_Verses 1-10
+      base_file: f0353.txt
+      order: 83
+    fDAFC:
+      title: CV_Verses 11-20
+      base_file: fDAFC.txt
+      order: 84
+    f6828:
+      title: CV_Verses 21-30
+      base_file: f6828.txt
+      order: 85
+    f0EED:
+      title: CV_Verses 31-40
+      base_file: f0EED.txt
+      order: 86
+    f4C77:
+      title: CV_Verses 41-50
+      base_file: f4C77.txt
+      order: 87
+    f7514:
+      title: CV_Verses 51-60
+      base_file: f7514.txt
+      order: 88
+    fAFF6:
+      title: CV_Verses 61-70
+      base_file: fAFF6.txt
+      order: 89
+    f1E2C:
+      title: CVI_Verses 1-10
+      base_file: f1E2C.txt
+      order: 90
+    f86C1:
+      title: CVI_Verses 11-20
+      base_file: f86C1.txt
+      order: 91
+    fD63C:
+      title: CVI_Verses 21-30
+      base_file: fD63C.txt
+      order: 92
+    f4B4A:
+      title: CVI_Verses 31-40
+      base_file: f4B4A.txt
+      order: 93
+    f2989:
+      title: CVI_Verses 41-50
+      base_file: f2989.txt
+      order: 94
+    f9D3C:
+      title: CVI_Verses 51-60
+      base_file: f9D3C.txt
+      order: 95
+    fFB68:
+      title: CVI_Verses 61-70
+      base_file: fFB68.txt
+      order: 96
+    f35BB:
+      title: CVI_Verses 71-79
+      base_file: f35BB.txt
+      order: 97
+    f4A99:
+      title: CVII_Verses 1-10
+      base_file: f4A99.txt
+      order: 98
+    fA47A:
+      title: CVII_Verses 11-20
+      base_file: fA47A.txt
+      order: 99
+    fC7E7:
+      title: CVII_Verses 21-30
+      base_file: fC7E7.txt
+      order: 100
+    f039C:
+      title: CVII_Verses 31-40
+      base_file: f039C.txt
+      order: 101
+    f3E5E:
+      title: CVII_Verses 41-50
+      base_file: f3E5E.txt
+      order: 102
+    fF767:
+      title: CVII_Verses 51-56
+      base_file: fF767.txt
+      order: 103
+    f846B:
+      title: CVIII_Verses 1-10
+      base_file: f846B.txt
+      order: 104
+    f0450:
+      title: CVIII_Verses 11-20
+      base_file: f0450.txt
+      order: 105
+    f0F34:
+      title: CVIII_Verses 21-30
+      base_file: f0F34.txt
+      order: 106
+    f9699:
+      title: CVIII_Verses 31-39
+      base_file: f9699.txt
+      order: 107
+    f3834:
+      title: CVIII_Verses 40-43
+      base_file: f3834.txt
+      order: 108
+    f7301:
+      title: 'Chapter IX: Conclusions'
+      base_file: f7301.txt
+      order: 109
+  chapter_to_tile:
+    CI: 'Chapter I: Dhātunirdeśa'
+    CII: 'Chapter II: Indriyanirdeśa'
+    CIII: 'Chapter III: Lokanirdeśa'
+    CIV: 'Chapter IV: Karmanirdeśa'
+    CV: 'Chapter V: Anuśayanirdeśa'
+    CVI: 'Chapter VI: Mārgapudgalanirdeśa'
+    CVII: 'Chapter VII: Jñānanirdeśa'
+    CVIII: 'Chapter VIII: Samāpattinirdeśa'
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

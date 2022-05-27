@@ -1,0 +1,1380 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=511' accesskey='1'>Vasubandhu: Abhidharmakośabhāṣya</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Vasubandhu: Abhidharmakośabhāṣya<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[3797]" value="3797" id="lancheckbox" checked >Sanskrit: San: Pradhan (1967)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[4032]" value="4032" id="lancheckbox" checked >Chinese: Chi: 真諦 Zhēndì 563-568 A.D. T.1559</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[4033]" value="4033" id="lancheckbox" checked >Chinese: Chi: 玄奘 Xuánzàng 651 A.D. T 1558, </label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[3650]" value="3650" id="lancheckbox" checked >Tibetan: Tib: Jinamitra/dPal brtsegs, ca. A.D. 800, Tg, mṅon pa, ku</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_511[3649]" value="3649" id="lancheckbox" checked >Uighur: Uigh: ca. A.D. 900, Stockholm MS</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="511">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="511">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='511'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v511">Search in Vasubandhu: Abhidharmakośabhāṣya</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=511'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=511'>Vasubandhu: Abhidharmakośabhāṣya</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=511" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="52561.Title|52562.Preface|52563.ChapterI:Dhātunirdeśa|52617.ChapterII:Indriyanirdeśa|52626.ChapterIII:Lokanirdeśa|52638.ChapterIV:Karmanirdeśa|52652.ChapterV:Anuśayanirdeśa|52660.ChapterVI:Mārgapudgalanirdeśa|52669.ChapterVII:Jñānanirdeśa|52676.ChapterVIII:Samāpattinirdeśa|52682.ChapterIX:Conclusions|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52561.Title" border=0 hspace=2><a id="href_52561.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961983&level=1&cid=501536" class="ajax_tree0">Title
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52562.Preface" border=0 hspace=2><a id="href_52562.Preface" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961984&level=1&cid=501537" class="ajax_tree0">Preface
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52563.ChapterI:Dhātunirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52563.ChapterI:Dhātunirdeśa" border=0 hspace=2><a id="href_52563.ChapterI:Dhātunirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961985&level=1&cid=501538" class="ajax_tree0">Chapter I: Dhātunirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52563.ChapterI:Dhātunirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52564.Verses1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52564.Verses1-10" border=0 hspace=2><a id="href_52564.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961985&level=2&cid=501538" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<div style="display:none;"  id="div_52564.Verses1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52565.Verse1" border=0 hspace=2><a id="href_52565.Verse1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=961985&level=3&cid=501538" class="ajax_tree2">Verse 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52566.Verse2" border=0 hspace=2><a id="href_52566.Verse2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962001&level=3&cid=501540" class="ajax_tree2">Verse 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52567.Verse3" border=0 hspace=2><a id="href_52567.Verse3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962019&level=3&cid=501548" class="ajax_tree2">Verse 3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52568.Verse4" border=0 hspace=2><a id="href_52568.Verse4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962026&level=3&cid=501552" class="ajax_tree2">Verse 4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52569.Verse5" border=0 hspace=2><a id="href_52569.Verse5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962037&level=3&cid=501560" class="ajax_tree2">Verse 5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52570.Verse6" border=0 hspace=2><a id="href_52570.Verse6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962046&level=3&cid=501566" class="ajax_tree2">Verse 6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52571.Verse7" border=0 hspace=2><a id="href_52571.Verse7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962077&level=3&cid=501577" class="ajax_tree2">Verse 7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52572.Verse8" border=0 hspace=2><a id="href_52572.Verse8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962093&level=3&cid=501582" class="ajax_tree2">Verse 8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52573.Verse9" border=0 hspace=2><a id="href_52573.Verse9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962113&level=3&cid=501589" class="ajax_tree2">Verse 9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52574.Verse10" border=0 hspace=2><a id="href_52574.Verse10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962126&level=3&cid=501594" class="ajax_tree2">Verse 10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52575.Verses11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52575.Verses11-20" border=0 hspace=2><a id="href_52575.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962204&level=2&cid=501612" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<div style="display:none;"  id="div_52575.Verses11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52576.Verse11" border=0 hspace=2><a id="href_52576.Verse11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962204&level=3&cid=501612" class="ajax_tree2">Verse 11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52577.Verse12" border=0 hspace=2><a id="href_52577.Verse12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962216&level=3&cid=501615" class="ajax_tree2">Verse 12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52578.Verse13" border=0 hspace=2><a id="href_52578.Verse13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962232&level=3&cid=501622" class="ajax_tree2">Verse 13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52579.Verse14" border=0 hspace=2><a id="href_52579.Verse14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962273&level=3&cid=501634" class="ajax_tree2">Verse 14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52580.Verse15" border=0 hspace=2><a id="href_52580.Verse15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962287&level=3&cid=501641" class="ajax_tree2">Verse 15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52581.Verse16" border=0 hspace=2><a id="href_52581.Verse16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962301&level=3&cid=501647" class="ajax_tree2">Verse 16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52582.Verse17" border=0 hspace=2><a id="href_52582.Verse17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962317&level=3&cid=501656" class="ajax_tree2">Verse 17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52583.Verse18" border=0 hspace=2><a id="href_52583.Verse18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962331&level=3&cid=501660" class="ajax_tree2">Verse 18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52584.Verse19" border=0 hspace=2><a id="href_52584.Verse19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962346&level=3&cid=501668" class="ajax_tree2">Verse 19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52585.Verse20" border=0 hspace=2><a id="href_52585.Verse20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962355&level=3&cid=501672" class="ajax_tree2">Verse 20
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52586.Verses21-30')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52586.Verses21-30" border=0 hspace=2><a id="href_52586.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962412&level=2&cid=501678" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<div style="display:none;"  id="div_52586.Verses21-30">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52587.Verse21" border=0 hspace=2><a id="href_52587.Verse21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962412&level=3&cid=501678" class="ajax_tree2">Verse 21
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52588.Verse22" border=0 hspace=2><a id="href_52588.Verse22" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962420&level=3&cid=501681" class="ajax_tree2">Verse 22
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52589.Verse23" border=0 hspace=2><a id="href_52589.Verse23" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962449&level=3&cid=501686" class="ajax_tree2">Verse 23
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52590.Verse24" border=0 hspace=2><a id="href_52590.Verse24" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962468&level=3&cid=501695" class="ajax_tree2">Verse 24
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52591.Verse25" border=0 hspace=2><a id="href_52591.Verse25" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962483&level=3&cid=501698" class="ajax_tree2">Verse 25
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52592.Verse26" border=0 hspace=2><a id="href_52592.Verse26" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962488&level=3&cid=501701" class="ajax_tree2">Verse 26
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52593.Verse27" border=0 hspace=2><a id="href_52593.Verse27" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962498&level=3&cid=501708" class="ajax_tree2">Verse 27
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52594.Verse28" border=0 hspace=2><a id="href_52594.Verse28" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962513&level=3&cid=501711" class="ajax_tree2">Verse 28
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52595.Verse29" border=0 hspace=2><a id="href_52595.Verse29" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962531&level=3&cid=501720" class="ajax_tree2">Verse 29
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52596.Verse30" border=0 hspace=2><a id="href_52596.Verse30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962578&level=3&cid=501733" class="ajax_tree2">Verse 30
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52597.Verses31-40')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52597.Verses31-40" border=0 hspace=2><a id="href_52597.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962628&level=2&cid=501742" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<div style="display:none;"  id="div_52597.Verses31-40">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52598.Verse31" border=0 hspace=2><a id="href_52598.Verse31" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962628&level=3&cid=501742" class="ajax_tree2">Verse 31
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52599.Verse32" border=0 hspace=2><a id="href_52599.Verse32" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962635&level=3&cid=501748" class="ajax_tree2">Verse 32
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52600.Verse33" border=0 hspace=2><a id="href_52600.Verse33" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962654&level=3&cid=501755" class="ajax_tree2">Verse 33
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52601.Verse34" border=0 hspace=2><a id="href_52601.Verse34" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962667&level=3&cid=501760" class="ajax_tree2">Verse 34
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52602.Verse35" border=0 hspace=2><a id="href_52602.Verse35" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962687&level=3&cid=501772" class="ajax_tree2">Verse 35
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52603.Verse36" border=0 hspace=2><a id="href_52603.Verse36" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962717&level=3&cid=501782" class="ajax_tree2">Verse 36
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52604.Verse37" border=0 hspace=2><a id="href_52604.Verse37" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962732&level=3&cid=501789" class="ajax_tree2">Verse 37
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52605.Verse38" border=0 hspace=2><a id="href_52605.Verse38" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962759&level=3&cid=501796" class="ajax_tree2">Verse 38
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52606.Verse39" border=0 hspace=2><a id="href_52606.Verse39" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962788&level=3&cid=501805" class="ajax_tree2">Verse 39
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52607.Verse40" border=0 hspace=2><a id="href_52607.Verse40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962853&level=3&cid=501819" class="ajax_tree2">Verse 40
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('52608.Verses41-48')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52608.Verses41-48" border=0 hspace=2><a id="href_52608.Verses41-48" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962873&level=2&cid=501828" class="ajax_tree1">Verses 41-48
+</td></tr></table>
+<div style="display:none;"  id="div_52608.Verses41-48">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52609.Verse41" border=0 hspace=2><a id="href_52609.Verse41" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962873&level=3&cid=501828" class="ajax_tree2">Verse 41
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52610.Verse42" border=0 hspace=2><a id="href_52610.Verse42" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962886&level=3&cid=501835" class="ajax_tree2">Verse 42
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52611.Verse43" border=0 hspace=2><a id="href_52611.Verse43" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962943&level=3&cid=501844" class="ajax_tree2">Verse 43
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52612.Verse44" border=0 hspace=2><a id="href_52612.Verse44" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=962996&level=3&cid=501851" class="ajax_tree2">Verse 44
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52613.Verse45" border=0 hspace=2><a id="href_52613.Verse45" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963043&level=3&cid=501858" class="ajax_tree2">Verse 45
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52614.Verse46" border=0 hspace=2><a id="href_52614.Verse46" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963071&level=3&cid=501865" class="ajax_tree2">Verse 46
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52615.Verse47" border=0 hspace=2><a id="href_52615.Verse47" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963084&level=3&cid=501874" class="ajax_tree2">Verse 47
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52616.Verse48" border=0 hspace=2><a id="href_52616.Verse48" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963100&level=3&cid=501883" class="ajax_tree2">Verse 48
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52617.ChapterII:Indriyanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52617.ChapterII:Indriyanirdeśa" border=0 hspace=2><a id="href_52617.ChapterII:Indriyanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963123&level=1&cid=501894" class="ajax_tree0">Chapter II: Indriyanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52617.ChapterII:Indriyanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52618.Verses1-10" border=0 hspace=2><a id="href_52618.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963128&level=2&cid=501897" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52619.Verses11-20" border=0 hspace=2><a id="href_52619.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963373&level=2&cid=501954" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52620.Verses21-30" border=0 hspace=2><a id="href_52620.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963562&level=2&cid=502040" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52621.Verses31-40" border=0 hspace=2><a id="href_52621.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=963775&level=2&cid=502093" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52622.Verses41-50" border=0 hspace=2><a id="href_52622.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=964038&level=2&cid=502169" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52623.Verses51-60" border=0 hspace=2><a id="href_52623.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=964547&level=2&cid=502267" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52624.Verses61-70" border=0 hspace=2><a id="href_52624.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965023&level=2&cid=502351" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52625.Verses71-73" border=0 hspace=2><a id="href_52625.Verses71-73" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965286&level=2&cid=502444" class="ajax_tree1">Verses 71-73
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52626.ChapterIII:Lokanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52626.ChapterIII:Lokanirdeśa" border=0 hspace=2><a id="href_52626.ChapterIII:Lokanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965433&level=1&cid=502474" class="ajax_tree0">Chapter III: Lokanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52626.ChapterIII:Lokanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52627.Verses1-10" border=0 hspace=2><a id="href_52627.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965433&level=2&cid=502474" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52628.Verses11-20" border=0 hspace=2><a id="href_52628.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=965738&level=2&cid=502543" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52629.Verses21-30" border=0 hspace=2><a id="href_52629.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966058&level=2&cid=502629" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52630.Verses31-40" border=0 hspace=2><a id="href_52630.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966466&level=2&cid=502703" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52631.Verses41-50" border=0 hspace=2><a id="href_52631.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966732&level=2&cid=502785" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52632.Verses51-60" border=0 hspace=2><a id="href_52632.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=966940&level=2&cid=502834" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52633.Verses61-70" border=0 hspace=2><a id="href_52633.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967094&level=2&cid=502897" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52634.Verses71-80" border=0 hspace=2><a id="href_52634.Verses71-80" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967200&level=2&cid=502946" class="ajax_tree1">Verses 71-80
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52635.Verses81-90" border=0 hspace=2><a id="href_52635.Verses81-90" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967304&level=2&cid=502999" class="ajax_tree1">Verses 81-90
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52636.Verses91-100" border=0 hspace=2><a id="href_52636.Verses91-100" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967443&level=2&cid=503051" class="ajax_tree1">Verses 91-100
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52637.Verses101-102" border=0 hspace=2><a id="href_52637.Verses101-102" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967757&level=2&cid=503112" class="ajax_tree1">Verses 101-102
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52638.ChapterIV:Karmanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52638.ChapterIV:Karmanirdeśa" border=0 hspace=2><a id="href_52638.ChapterIV:Karmanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967790&level=1&cid=503127" class="ajax_tree0">Chapter IV: Karmanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52638.ChapterIV:Karmanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52639.Verses1-10" border=0 hspace=2><a id="href_52639.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=967790&level=2&cid=503127" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52640.Verses11-20" border=0 hspace=2><a id="href_52640.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968145&level=2&cid=503207" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52641.Verses21-30" border=0 hspace=2><a id="href_52641.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968327&level=2&cid=503272" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52642.Verses31-40" border=0 hspace=2><a id="href_52642.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968472&level=2&cid=503324" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52643.Verses41-50" border=0 hspace=2><a id="href_52643.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968744&level=2&cid=503385" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52644.Verses51-60" border=0 hspace=2><a id="href_52644.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=968901&level=2&cid=503437" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52645.Verses61-70" border=0 hspace=2><a id="href_52645.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969062&level=2&cid=503494" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52646.Verses71-80" border=0 hspace=2><a id="href_52646.Verses71-80" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969229&level=2&cid=503554" class="ajax_tree1">Verses 71-80
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52647.Verses81-90" border=0 hspace=2><a id="href_52647.Verses81-90" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969484&level=2&cid=503624" class="ajax_tree1">Verses 81-90
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52648.Verses91-100" border=0 hspace=2><a id="href_52648.Verses91-100" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969645&level=2&cid=503686" class="ajax_tree1">Verses 91-100
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52649.Verses101-110" border=0 hspace=2><a id="href_52649.Verses101-110" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969783&level=2&cid=503744" class="ajax_tree1">Verses 101-110
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52650.Verses111-120" border=0 hspace=2><a id="href_52650.Verses111-120" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=969920&level=2&cid=503796" class="ajax_tree1">Verses 111-120
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52651.Verses121-127" border=0 hspace=2><a id="href_52651.Verses121-127" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970050&level=2&cid=503852" class="ajax_tree1">Verses 121-127
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52652.ChapterV:Anuśayanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52652.ChapterV:Anuśayanirdeśa" border=0 hspace=2><a id="href_52652.ChapterV:Anuśayanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970147&level=1&cid=503897" class="ajax_tree0">Chapter V: Anuśayanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52652.ChapterV:Anuśayanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52653.Verses1-10" border=0 hspace=2><a id="href_52653.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970152&level=2&cid=503900" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52654.Verses11-20" border=0 hspace=2><a id="href_52654.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970388&level=2&cid=503961" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52655.Verses21-30" border=0 hspace=2><a id="href_52655.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970521&level=2&cid=504014" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52656.Verses31-40" border=0 hspace=2><a id="href_52656.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970838&level=2&cid=504087" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52657.Verses41-50" border=0 hspace=2><a id="href_52657.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=970989&level=2&cid=504141" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52658.Verses51-60" border=0 hspace=2><a id="href_52658.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971097&level=2&cid=504187" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52659.Verses61-70" border=0 hspace=2><a id="href_52659.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971233&level=2&cid=504262" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52660.ChapterVI:Mārgapudgalanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52660.ChapterVI:Mārgapudgalanirdeśa" border=0 hspace=2><a id="href_52660.ChapterVI:Mārgapudgalanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971384&level=1&cid=504326" class="ajax_tree0">Chapter VI: Mārgapudgalanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52660.ChapterVI:Mārgapudgalanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52661.Verses1-10" border=0 hspace=2><a id="href_52661.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971386&level=2&cid=504328" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52662.Verses11-20" border=0 hspace=2><a id="href_52662.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971713&level=2&cid=504398" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52663.Verses21-30" border=0 hspace=2><a id="href_52663.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=971916&level=2&cid=504476" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52664.Verses31-40" border=0 hspace=2><a id="href_52664.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972104&level=2&cid=504547" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52665.Verses41-50" border=0 hspace=2><a id="href_52665.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972311&level=2&cid=504593" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52666.Verses51-60" border=0 hspace=2><a id="href_52666.Verses51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972508&level=2&cid=504657" class="ajax_tree1">Verses 51-60
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52667.Verses61-70" border=0 hspace=2><a id="href_52667.Verses61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972767&level=2&cid=504731" class="ajax_tree1">Verses 61-70
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52668.Verses71-79" border=0 hspace=2><a id="href_52668.Verses71-79" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=972924&level=2&cid=504789" class="ajax_tree1">Verses 71-79
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52669.ChapterVII:Jñānanirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52669.ChapterVII:Jñānanirdeśa" border=0 hspace=2><a id="href_52669.ChapterVII:Jñānanirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973039&level=1&cid=504853" class="ajax_tree0">Chapter VII: Jñānanirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52669.ChapterVII:Jñānanirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52670.Verses1-10" border=0 hspace=2><a id="href_52670.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973043&level=2&cid=504856" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52671.Verses11-20" border=0 hspace=2><a id="href_52671.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973159&level=2&cid=504910" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52672.Verses21-30" border=0 hspace=2><a id="href_52672.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973433&level=2&cid=504991" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52673.Verses31-40" border=0 hspace=2><a id="href_52673.Verses31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973591&level=2&cid=505058" class="ajax_tree1">Verses 31-40
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52674.Verses41-50" border=0 hspace=2><a id="href_52674.Verses41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973747&level=2&cid=505134" class="ajax_tree1">Verses 41-50
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52675.Verses51-56" border=0 hspace=2><a id="href_52675.Verses51-56" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973915&level=2&cid=505211" class="ajax_tree1">Verses 51-56
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('52676.ChapterVIII:Samāpattinirdeśa','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_52676.ChapterVIII:Samāpattinirdeśa" border=0 hspace=2><a id="href_52676.ChapterVIII:Samāpattinirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=973999&level=1&cid=505260" class="ajax_tree0">Chapter VIII: Samāpattinirdeśa
+</td></tr></table>
+<div style="display:none;"  id="div_52676.ChapterVIII:Samāpattinirdeśa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52677.Verses1-10" border=0 hspace=2><a id="href_52677.Verses1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974003&level=2&cid=505263" class="ajax_tree1">Verses 1-10
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52678.Verses11-20" border=0 hspace=2><a id="href_52678.Verses11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974272&level=2&cid=505338" class="ajax_tree1">Verses 11-20
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52679.Verses21-30" border=0 hspace=2><a id="href_52679.Verses21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974413&level=2&cid=505394" class="ajax_tree1">Verses 21-30
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52680.Verses31-39" border=0 hspace=2><a id="href_52680.Verses31-39" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974556&level=2&cid=505469" class="ajax_tree1">Verses 31-39
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52681.Verses40-43" border=0 hspace=2><a id="href_52681.Verses40-43" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974699&level=2&cid=505538" class="ajax_tree1">Verses 40-43
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_52682.ChapterIX:Conclusions" border=0 hspace=2><a id="href_52682.ChapterIX:Conclusions" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=511&mid=974708&level=1&cid=505545" class="ajax_tree0">Chapter IX: Conclusions
+</td></tr></table>
+<script language=javascript>test('52658.Verses51-60|52652.ChapterV:Anuśayanirdeśa|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=511&amp;mid=971097&amp;level=2">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=511&amp;cid=504187&amp;mid=971097&amp;level=2">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=511&amp;cid=504187&amp;mid=971097&amp;level=2">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><div class='kilderef' id='5346306'></div><div class='clear'></div><span id='5346306bi' class='paragraph'>
+							<b>dṛṣṭyāmarśāt pradāśastu śāṭhyaṃ dṛṣṭisamutthitam |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='5748364'></div><div class='clear'></div><span id='5748364bi' class='paragraph'>
+							偈曰。從見取不捨。從見諂曲生。釋曰。(15)若人於戒執取起見取。此人有二僻執。如理(16)教捨。由此二見不能捨此僻執故。是二見等(17)流垢。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><div class='kilderef' id='5761610'></div><div class='clear'></div><span id='5761610bi' class='paragraph'>
+							惱是見取等流。諂是諸見等流。[See the also full verse quoted previously]&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><div class='kilderef' id='4950015'></div><div class='clear'></div><span id='4950015bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><div class='kilderef' id='4936762'></div><div class='clear'></div><span id='4936762bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346307bi' class='paragraph'>
+							“kiṃ kuṭilaṃ pāpikā dṛṣṭiriti” gāthāvacanād yujyate |&nbsp;</span><span id='5346308bi' class='paragraph'>
+						 śāṭhyaṃ dṛṣṭiniḥṣyandaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748365bi' class='paragraph'>
+							如偈言(18)何法名邪曲　謂邪見等見&nbsp;</span><span id='5748366bi' class='paragraph'>
+						 (19)是故諂曲是諸見等流垢。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761611bi' class='paragraph'>
+							(17)如言何曲謂諸惡見。&nbsp;</span><span id='5761612bi' class='paragraph'>
+						 故諂定是諸見等流。此(18)垢并纒從煩惱起。是故皆立隨煩惱名。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950016bi' class='paragraph'>
+							.&nbsp;</span><span id='4950017bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936763bi' class='paragraph'>
+							&nbsp;</span><span id='4936764bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346309bi' class='paragraph'>
+							ka eṣāṃ kiṃprahātavyaḥ | yāni tāvat daśa paryavasthānānyuktāni&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748367bi' class='paragraph'>
+							於中何惑何道所(20)滅。前所説十倒起惑。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761613bi' class='paragraph'>
+							此(19)垢及纒爲何所斷。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950018bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936765bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346310bi' class='paragraph'>
+							<b>tatrāhrīkyānapatrāpyastyānamiddhoddhavā dvidhā</b> || 5.51 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748368bi' class='paragraph'>
+							偈曰。此中無差慚。疲(21)弱睡掉起。有二。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761614bi' class='paragraph'>
+							頌曰(20)纒無慚愧眠　惛掉見修斷<br />(21)餘及煩惱垢　自在故唯修&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950019bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936766bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346311bi' class='paragraph'>
+							ete pañca dharmā dvividhā darśanabhāvanāprahātavyā ubhayaprakārakleśasaṃprayogāt |&nbsp;</span><span id='5346312bi' class='paragraph'>
+						 yaś ca yaddarśanaheyasaṃprayuktaḥ sa taddarśanaprahātavyaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748369bi' class='paragraph'>
+							釋曰。是五法有二種。或見諦(22)所滅。或修道所滅。與二部惑相應故。&nbsp;</span><span id='5748370bi' class='paragraph'>
+						 此惑隨(23)與見諦所滅相應。即由見此諦滅&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761615bi' class='paragraph'>
+							(22)論曰。且十纒中無慚等五通見修斷。由此(23)通與二部煩惱相應起故。&nbsp;</span><span id='5761616bi' class='paragraph'>
+						 隨與見此諦所(24)斷相應。即説名爲見此諦所斷。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950020bi' class='paragraph'>
+							.&nbsp;</span><span id='4950021bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936767bi' class='paragraph'>
+							&nbsp;</span><span id='4936768bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346313bi' class='paragraph'>
+							<b>tadanye bhāvanāheyāḥ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748371bi' class='paragraph'>
+							偈曰。餘修(24)滅&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761617bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950022bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936769bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346314bi' class='paragraph'>
+							tebhyo ’nye paryavasthānasaṃgṛhītā upakleśā bhāvanāheyā eva |&nbsp;</span><span id='5346315bi' class='paragraph'>
+						 irṣyāmātsaryakaukṛtyakrodhabhrakṣāḥ svatantrāś ca |&nbsp;</span><span id='5346316bi' class='paragraph'>
+						 svatantrāś caite pañcopakleśā adhimātrasaṃprayogitvāt |&nbsp;</span><span id='5346317bi' class='paragraph'>
+						 yathaite īrṣyādayaḥ pañcopakleśā bhāvanāheyāḥ&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748372bi' class='paragraph'>
+							釋。曰餘。倒起惑異此五。必定修道所滅。&nbsp;</span><span id='5748373bi' class='paragraph'>
+						 謂(25)嫉＊姤慳悋憂悔忿恨覆藏。&nbsp;</span><span id='5748374bi' class='paragraph'>
+						 偈曰。及自在惑(26)垢。釋曰。此五小分惑。＊唯與無明相。&nbsp;</span><span id='5748375bi' class='paragraph'>
+						 應故如(27)嫉＊姤等。五小分惑修道所滅。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761618bi' class='paragraph'>
+							餘嫉慳悔忿(25)覆并垢自在起故唯修所斷。&nbsp;</span><span id='5761619bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='5761620bi' class='paragraph'>
+						 唯與修斷他力(26)無明共相應故名自在起。&nbsp;</span><span id='5761621bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950023bi' class='paragraph'>
+							.&nbsp;</span><span id='4950024bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950025bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950026bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936770bi' class='paragraph'>
+							&nbsp;</span><span id='4936771bi' class='paragraph'>
+						 &nbsp;</span><span id='4936772bi' class='paragraph'>
+						 &nbsp;</span><span id='4936773bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346318bi' class='paragraph'>
+							<b>svatantrāś ca tathā malāḥ |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748376bi' class='paragraph'>
+							自在惑垢亦(28)爾。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761622bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950027bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936774bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346319bi' class='paragraph'>
+							ṣaṭkleśamalāstathaiva | ete punar yathoktā upakleśāḥ&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748377bi' class='paragraph'>
+							是六種惑垢。由自在故。修道所滅。如前所(29)説。一切小惑。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761623bi' class='paragraph'>
+							此隨煩惱誰通何(27)性。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950028bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936775bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346320bi' class='paragraph'>
+							<b>kāme ’śubhāḥ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748378bi' class='paragraph'>
+							偈曰。於欲惡。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761624bi' class='paragraph'>
+							頌曰(28)欲三二餘惡　上界皆無記&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950029bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936776bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346321bi' class='paragraph'>
+							kāmadhātāv akuśalāḥ | tatrāpi&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748379bi' class='paragraph'>
+							釋曰。若在欲界(263b1)皆悉是惡。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761625bi' class='paragraph'>
+							(29)論曰。欲界所繋眠惛掉三皆通不善無記二(110a1)性所餘一切皆唯不善。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950030bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936777bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346322bi' class='paragraph'>
+							<b>trayo dvidhā</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748380bi' class='paragraph'>
+							偈曰。三二。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761626bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950031bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936778bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346323bi' class='paragraph'>
+							styānauddhatyamiddhāny akuśalāvyākṛtāni |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748381bi' class='paragraph'>
+							釋曰。疲弱掉起睡。或(2)惡或無記。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761627bi' class='paragraph'>
+							See the previous commentary [two records back]&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950032bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936779bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346324bi' class='paragraph'>
+							<b>pareṇāvyākṛtāstataḥ</b> || 5.52 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748382bi' class='paragraph'>
+							偈曰。上界彼無記&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761628bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950033bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936780bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346325bi' class='paragraph'>
+							kāmadhātorurdhvamavyākṛtāḥ upakleśā yathāsaṃbhavam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748383bi' class='paragraph'>
+							釋曰。從欲界上。(3)隨所有小分惑。皆是無記。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761629bi' class='paragraph'>
+							上二界中隨應所有(2)一切唯是無記性攝。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950034bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936781bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346326bi' class='paragraph'>
+							kati punar eṣāṃ kutastyā veditavyāḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748384bi' class='paragraph'>
+							於中幾惑於何界(4)有。應知&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761630bi' class='paragraph'>
+							此隨煩惱誰何界繋。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950035bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936782bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346327bi' class='paragraph'>
+							<b>māyā śāṭhyaṃ ca kāmādyadhyānayoḥ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748385bi' class='paragraph'>
+							偈曰。誑諂從欲界。初定。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761631bi' class='paragraph'>
+							頌(3)曰(4)諂誑欲初定　三三界餘欲&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950036bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936783bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346328bi' class='paragraph'>
+							etau dvau kāmadhātau prathame ca dhyāne | kathaṃ brahmaloke māyāḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748386bi' class='paragraph'>
+							釋曰。此二(5)惑於欲界及初定有。云何知於梵處有欺誑。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761632bi' class='paragraph'>
+							(5)論曰。諂誑唯在欲界初定。寧知梵世有諂(6)誑耶。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950037bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936784bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346329bi' class='paragraph'>
+							<b>brahmavañcanāt |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748387bi' class='paragraph'>
+							(6)偈曰。梵誑故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761633bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950038bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936785bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346330bi' class='paragraph'>
+							sa hi tatra mahābrahmā vitathātmasaṃdarśanatayā āyuṣmantamaśvajitaṃ vañcayituṃ pravṛttaḥ |&nbsp;</span><span id='5346331bi' class='paragraph'>
+						 uktam api śāṭhyaṃ prasaṅgāgataṃ punar evoktam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748388bi' class='paragraph'>
+							釋曰。於色界大梵王。由不如顯(7)示自體故。欺誑淨命阿輸實。&nbsp;</span><span id='5748389bi' class='paragraph'>
+						 於前已説。諂曲(8)由義相應今更説。於中亦説有諂曲。由相應(9)至故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761634bi' class='paragraph'>
+							以大梵王匿己情事現相誑惑馬(7)勝苾芻。&nbsp;</span><span id='5761635bi' class='paragraph'>
+						 此二於前雖已分別義相應故今(8)復重辯。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950039bi' class='paragraph'>
+							.&nbsp;</span><span id='4950040bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936786bi' class='paragraph'>
+							&nbsp;</span><span id='4936787bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346332bi' class='paragraph'>
+							styānauddhatyamadā dhātutraye&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748390bi' class='paragraph'>
+							偈曰。疲掉醉三界。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761636bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950041bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936788bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346333bi' class='paragraph'>
+							ete trayas traidhātukāḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748391bi' class='paragraph'>
+							釋曰。此三小惑於三(10)界皆有。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761637bi' class='paragraph'>
+							惛掉憍三通在三界。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950042bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936789bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346334bi' class='paragraph'>
+							<b>anye kāmadhātujāḥ</b> || 5.53 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748392bi' class='paragraph'>
+							偈曰。餘惑＊唯欲界。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761638bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950043bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936790bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346335bi' class='paragraph'>
+							ṣoḍaśabhyaḥ pañcāpanīyānya ekādaśopakleśāḥ kāmāvacarā eva |&nbsp;</span><span id='5346336bi' class='paragraph'>
+						 uktā kleśāḥ upakleśāś ca |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748393bi' class='paragraph'>
+							釋曰。於十六中(11)除五惑。所餘十一小惑但行於欲界。&nbsp;</span><span id='5748394bi' class='paragraph'>
+						 説惑及(12)小惑已。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761639bi' class='paragraph'>
+							所餘一切皆唯(9)在欲。謂十六中五如前辯。所餘十一唯欲界(10)繋。&nbsp;</span><span id='5761640bi' class='paragraph'>
+						 已辯隨眠及隨煩惱。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950044bi' class='paragraph'>
+							.&nbsp;</span><span id='4950045bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936791bi' class='paragraph'>
+							&nbsp;</span><span id='4936792bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346337bi' class='paragraph'>
+							athaiṣām anuśayānāṃ kati manobhūmikāḥ kati ṣaḍvijñānakāyikāḥ | saṃkṣepataḥ&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748395bi' class='paragraph'>
+							於中幾惑依意識地起。幾惑依六識(13)地起。若略説。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761641bi' class='paragraph'>
+							於中有幾唯在意(11)地。有幾通依六識地起。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950046bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936793bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346338bi' class='paragraph'>
+							<b>samānasiddhā dṛggheyā manovijñānabhūmikāḥ |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748396bi' class='paragraph'>
+							偈曰。見滅及慢睡。依意識地(14)生。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761642bi' class='paragraph'>
+							頌曰(12)見所斷慢眠　自在隨煩惱<br />(13)皆唯意地起　餘通依六識&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950047bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936794bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346339bi' class='paragraph'>
+							darśanaprahātavyāḥ sarve manobhūmikāḥ saha mānasiddhābhyāṃ bhāvanāheyābhyām api |&nbsp;</span><span id='5346340bi' class='paragraph'>
+						 te hi sakale manobhūmike |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748397bi' class='paragraph'>
+							釋曰。一切見諦所滅惑皆依意地起。慢睡(15)亦爾。若此二修道所滅。&nbsp;</span><span id='5748398bi' class='paragraph'>
+						 何以故。此具起於心(16)地。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761643bi' class='paragraph'>
+							(14)論曰。略説應知。諸見所斷及修所斷。一切(15)慢眠隨煩惱中自在起者。&nbsp;</span><span id='5761644bi' class='paragraph'>
+						 如是一切皆依意(16)識。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950048bi' class='paragraph'>
+							.&nbsp;</span><span id='4950049bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936795bi' class='paragraph'>
+							&nbsp;</span><span id='4936796bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346341bi' class='paragraph'>
+							<b>upakleśāḥ svatantrāś ca</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748399bi' class='paragraph'>
+							偈曰。自在小分惑。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761645bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950050bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936797bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346342bi' class='paragraph'>
+							ye ca kecidupakleśāḥ svatantrāste bhāvanāheyā api santo manobhūmikā eva draṣṭavyāḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748400bi' class='paragraph'>
+							釋曰。隨有小分惑自在(17)起若是修道所滅應知。亦依心地。起&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761646bi' class='paragraph'>
+							依五識身無容起故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950051bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936798bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346343bi' class='paragraph'>
+							<b>ṣaḍvijñānāśrayāḥ pare</b> || 5.54 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748401bi' class='paragraph'>
+							偈曰餘(18)依六識。起&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761647bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950052bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936799bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346344bi' class='paragraph'>
+							anye kleśopakleśāḥ ṣaḍvijñānabhūmikāḥ veditavyāḥ | ke punar anye |&nbsp;</span><span id='5346345bi' class='paragraph'>
+						 bhāvanāprahātavyā rāgapratighāvidyā upakleśāś ca tatsaṃprayuktāḥ |&nbsp;</span><span id='5346346bi' class='paragraph'>
+						 āhlīkyānapatrāpyastyānauddhatyāni |&nbsp;</span><span id='5346347bi' class='paragraph'>
+						 ye ca kleśamahābhūmikeṣūktāḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748402bi' class='paragraph'>
+							釋曰。所餘大惑及小。惑應。知依六(19)識地。起何。&nbsp;</span><span id='5748403bi' class='paragraph'>
+						 者爲餘修道所滅欲瞋無明及餘(20)小分惑。與欲等相應。&nbsp;</span><span id='5748404bi' class='paragraph'>
+						 又無羞無慚疲弱掉起。&nbsp;</span><span id='5748405bi' class='paragraph'>
+						 (21)及餘於惑大地所説。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761648bi' class='paragraph'>
+							所餘一切通依六(17)識。&nbsp;</span><span id='5761649bi' class='paragraph'>
+						 謂修所斷貪瞋無明及彼相應諸隨煩惱&nbsp;</span><span id='5761650bi' class='paragraph'>
+						 (18)即無慚愧惛掉及餘大煩惱地法所攝隨煩惱(19)依六識身皆容起故。&nbsp;</span><span id='5761651bi' class='paragraph'>
+						 See the previous record&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950053bi' class='paragraph'>
+							.&nbsp;</span><span id='4950054bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950055bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950056bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936800bi' class='paragraph'>
+							&nbsp;</span><span id='4936801bi' class='paragraph'>
+						 &nbsp;</span><span id='4936802bi' class='paragraph'>
+						 &nbsp;</span><span id='4936803bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346348bi' class='paragraph'>
+							yānīmāni sukhādīni pañcendriyāṇi eṣāṃ katamenendriyeṇa katamaḥ kleśa upakleśo vā saṃprayuktaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748406bi' class='paragraph'>
+							是前所説。樂受等五根。(22)於中與何根有何惑。及小惑相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761652bi' class='paragraph'>
+							如先所辯樂等五受(20)根。今此所明煩惱隨煩惱。何煩惱等何根相(21)應。於此先應辯諸煩惱。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950057bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936804bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346349bi' class='paragraph'>
+							<b>sukhabhyāṃ saṃprayukto hi rāgaḥ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748407bi' class='paragraph'>
+							偈曰。欲與(23)喜樂應&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761653bi' class='paragraph'>
+							頌曰(22)欲界諸煩惱　貪喜樂相應<br />(23)瞋憂苦癡遍　邪見憂及喜<br />(24)疑憂餘五喜　一切捨相應<br />(25)上地皆隨應　遍自識諸受&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950058bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936805bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346350bi' class='paragraph'>
+							sukhasaumanasyābhyāṃ rāgaḥ saṃprayuktaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748408bi' class='paragraph'>
+							釋曰。如理應知。欲與樂喜二根相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761654bi' class='paragraph'>
+							(26)論曰。欲界所繋諸煩惱中。貪喜樂相應。以歡(27)行轉遍六識故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950059bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936806bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346351bi' class='paragraph'>
+							<b>dveṣo viparyayāt |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748409bi' class='paragraph'>
+							(24)偈曰。瞋與憂苦應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761655bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950060bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936807bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346352bi' class='paragraph'>
+							duḥkhābhyām ity arthaḥ | duḥkhena daurmanasyena ca |&nbsp;</span><span id='5346353bi' class='paragraph'>
+						 harṣadainyākāravartitvāt ṣaṅvijñānabhūmikatvāc ca rāgadveṣayoḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748410bi' class='paragraph'>
+							釋曰。瞋與苦憂二根相應。&nbsp;</span><span id='5748411bi' class='paragraph'>
+						 (25)何以故。此二惑由歡喜憂惱相起故。由六識(26)爲地故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761656bi' class='paragraph'>
+							瞋憂苦相應。&nbsp;</span><span id='5761657bi' class='paragraph'>
+						 以慼行轉遍(28)六識故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950061bi' class='paragraph'>
+							.&nbsp;</span><span id='4950062bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936808bi' class='paragraph'>
+							&nbsp;</span><span id='4936809bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346354bi' class='paragraph'>
+							<b>mohaḥ sarvaiḥ</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748412bi' class='paragraph'>
+							偈曰。無明一切應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761658bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950063bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936810bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346355bi' class='paragraph'>
+							avidyāyāḥ sarvakleśasaṃprayogitvāt pañcabhir apīndriyaiḥ saṃprayogaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748413bi' class='paragraph'>
+							釋曰。無明與一切(27)惑相應故。是故與五根相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761659bi' class='paragraph'>
+							無明遍與前四相應。歡慼行轉遍(29)六識故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950064bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936811bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346356bi' class='paragraph'>
+							<b>asaddṛṣṭir manoduḥkhasukhena tu</b> || 5.55 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748414bi' class='paragraph'>
+							偈曰。邪見憂喜(28)應&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761660bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950065bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936812bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346357bi' class='paragraph'>
+							manoduḥkhaṃ daurmanasyaṃ manaḥsukhaṃ saumanasyaṃ ca |&nbsp;</span><span id='5346358bi' class='paragraph'>
+						 tābhyaṃ mithyādṛṣṭiḥ saṃprayuktā puṇyakarmaṇāṃ pāpakarmaṇāṃ ca yathākramam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748415bi' class='paragraph'>
+							釋曰。邪見依心地起故。是故與憂喜相(29)應。&nbsp;</span><span id='5748416bi' class='paragraph'>
+						 如次第於有福行無福行人。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761661bi' class='paragraph'>
+							邪見通與憂喜相應。歡慼行轉唯(110b1)意地故。&nbsp;</span><span id='5761662bi' class='paragraph'>
+						 何縁邪見歡慼行轉。如次先造罪福(2)業故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950066bi' class='paragraph'>
+							.&nbsp;</span><span id='4950067bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936813bi' class='paragraph'>
+							&nbsp;</span><span id='4936814bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346359bi' class='paragraph'>
+							<b>daurmanasyena kāṅkṣā</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748417bi' class='paragraph'>
+							偈曰。疑憂應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761663bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950068bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936815bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346360bi' class='paragraph'>
+							saṃśayito hi niścayenārthī durmanāyate |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748418bi' class='paragraph'>
+							(263c1)釋曰。若人有疑心求得決知。是故由疑生憂。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761664bi' class='paragraph'>
+							疑憂相應。以慼行轉唯意地故。懷猶(3)預者求決定知心愁慼故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950069bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936816bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346361bi' class='paragraph'>
+							<b>anye saumanasyena</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748419bi' class='paragraph'>
+							(2)偈曰。餘惑與喜應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761665bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950070bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936817bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346362bi' class='paragraph'>
+							anye ’nuśayāḥ saumanasyenaiva saṃprayuktāḥ | ke punar anye | catasro dṛṣṭano mānaś ca |&nbsp;</span><span id='5346363bi' class='paragraph'>
+						 harṣākāravartitvāt | kiṃpratisaṃyuktā ime ’nuśayā nirdiṣṭāḥ | āha |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748420bi' class='paragraph'>
+							釋曰。所餘諸惑與喜相應。(3)何者爲餘。謂四見慢。&nbsp;</span><span id='5748421bi' class='paragraph'>
+						 由歡喜相故。如此分判(4)已。諸惑與何界相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761666bi' class='paragraph'>
+							餘四見慢與喜(4)相應。&nbsp;</span><span id='5761667bi' class='paragraph'>
+						 以歡行轉唯意地故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950071bi' class='paragraph'>
+							.&nbsp;</span><span id='4950072bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936818bi' class='paragraph'>
+							&nbsp;</span><span id='4936819bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346364bi' class='paragraph'>
+							<b>kāmajāḥ |</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748422bi' class='paragraph'>
+							偈曰。欲生。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761668bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950073bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936820bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346365bi' class='paragraph'>
+							evaṃ pratiniyataṃ saṃprayogamuktvā sāmānyenāha&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748423bi' class='paragraph'>
+							釋曰。於欲(5)界生諸惑。應如此判。説決定相應惑已。通相(6)應今當説。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761669bi' class='paragraph'>
+							已約別相説受(5)相應。就通相説受相應者。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950074bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936821bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346366bi' class='paragraph'>
+							<b>sarve ’py upekṣayā</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748424bi' class='paragraph'>
+							偈曰。一切與捨應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761670bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950075bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936822bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346367bi' class='paragraph'>
+							sarve ’pyete ’nuśayā upekṣendriyeṇa saṃprayuktāḥ |&nbsp;</span><span id='5346368bi' class='paragraph'>
+						 pravāhacchedakāle kila kleśānām avaśyam upekṣā saṃtiṣṭhate |&nbsp;</span><span id='5346369bi' class='paragraph'>
+						 adhobhūmikāḥ katham ity āha&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748425bi' class='paragraph'>
+							釋曰。一切隨眠(7)惑與捨根相應。&nbsp;</span><span id='5748426bi' class='paragraph'>
+						 相續斷時。彼説諸惑必定依(8)捨受起。&nbsp;</span><span id='5748427bi' class='paragraph'>
+						 若爾上地惑云何判。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761671bi' class='paragraph'>
+							一切皆與捨受(6)相應。&nbsp;</span><span id='5761672bi' class='paragraph'>
+						 以諸隨眠相續斷位勢力衰歇必住捨(7)受。&nbsp;</span><span id='5761673bi' class='paragraph'>
+						 欲界既爾。上地云何。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950076bi' class='paragraph'>
+							.&nbsp;</span><span id='4950077bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950078bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936823bi' class='paragraph'>
+							&nbsp;</span><span id='4936824bi' class='paragraph'>
+						 &nbsp;</span><span id='4936825bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346370bi' class='paragraph'>
+							<b>svaiḥ svairyathābhumyūrdhvabhūmikāḥ</b> || 5.56 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748428bi' class='paragraph'>
+							偈曰。隨自自如(9)地上地惑相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761674bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950079bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936826bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346371bi' class='paragraph'>
+							svaiḥ svairindriyairurdhvabhūmikā anuśayāḥ saṃprayujyante | yasyāṃ bhūmau yāvantīndriyāṇi |&nbsp;</span><span id='5346372bi' class='paragraph'>
+						 tatrāpi cāturvijñānakāyikāścāturvijñānakāyikair manobhūmikā manobhūmikair eva yathāsaṃbhavam |&nbsp;</span><span id='5346373bi' class='paragraph'>
+						 uktaḥ kleśānām indriyasaṃprayogaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748429bi' class='paragraph'>
+							釋曰。上地諸惑與自受根。相(10)應若於彼地隨根量多少。&nbsp;</span><span id='5748430bi' class='paragraph'>
+						 如於彼地。若惑依(11)四識地起。如理應知。與四識地受相應。&nbsp;</span><span id='5748431bi' class='paragraph'>
+						 説隨(12)眠惑與根相應已。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761675bi' class='paragraph'>
+							皆隨所應遍與自(8)地自識倶起諸受相應。謂若地中具有四識(9)彼一一識所起煩惱各遍自識諸受相應。若(10)諸地中唯有意識即彼意識所起煩惱遍與(11)意識識受相應。上諸地中識受多少如前(12)已辯。故不別説。&nbsp;</span><span id='5761676bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='5761677bi' class='paragraph'>
+						 已辯煩惱諸受相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950080bi' class='paragraph'>
+							.&nbsp;</span><span id='4950081bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950082bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936827bi' class='paragraph'>
+							&nbsp;</span><span id='4936828bi' class='paragraph'>
+						 &nbsp;</span><span id='4936829bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346374bi' class='paragraph'>
+							upakleśānāṃ punaḥ&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748432bi' class='paragraph'>
+							小惑相應今當説&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761678bi' class='paragraph'>
+							今次(13)復應辯隨煩惱。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950083bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936830bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346375bi' class='paragraph'>
+							<b>daurmanasyena kaukṛtyamīrṣyā krodho vihiṃsanam |<br />upanāhaṃ pradāśaś ca</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748433bi' class='paragraph'>
+							偈曰。憂(13)根應憂悔。嫉＊姤忿逼惱。結過不捨耶。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761679bi' class='paragraph'>
+							頌曰(14)諸隨煩惱中　嫉悔忿及惱<br />(15)害恨憂倶起　慳喜受相應<br />(16)諂誑及眼覆　通憂喜倶起<br />(17)憍喜樂皆捨　餘四遍相應&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950084bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936831bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346376bi' class='paragraph'>
+							saṃprayuktānīti vartate | dainyākāravartitvādeṣāṃ manobhūmikatvāc ca |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748434bi' class='paragraph'>
+							釋曰。(14)如此等惑與憂根相應。縁憂惱相起故。依意(15)地起故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761680bi' class='paragraph'>
+							(18)論曰。隨煩惱中嫉等六種一切皆與憂根相(19)應。以慼行轉唯意地故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950085bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936832bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346377bi' class='paragraph'>
+							<b>mātsaryaṃ tu viparyayāt</b> || 5.57 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748435bi' class='paragraph'>
+							偈曰。慳悋翻此義。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761681bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950086bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936833bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346378bi' class='paragraph'>
+							saumanasyenetyarthaḥ | lobhānvayatvena harṣākāravartitvāt |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748436bi' class='paragraph'>
+							釋曰。此惑與喜根(16)相應。由是貪愛等類故。縁歡喜相生故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761682bi' class='paragraph'>
+							慳喜相應。以歡行(20)轉唯意地故。歡行轉者。慳相與貪極相似故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950087bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936834bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346379bi' class='paragraph'>
+							<b>māyā śāṭhyamathī bhrakṣo middhaṃ cobhayathā</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748437bi' class='paragraph'>
+							偈曰。(17)欺誑及諂曲。覆藏睡三種。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761683bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950088bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936835bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346380bi' class='paragraph'>
+							saumanasyadaurmanasyābhyāṃ saṃprayujyante | kadācid dhi sumanāḥ paraṃ vañcayate |&nbsp;</span><span id='5346381bi' class='paragraph'>
+						 kadācid durmanāḥ |&nbsp;</span><span id='5346382bi' class='paragraph'>
+						 evaṃ yāvat svapiti |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748438bi' class='paragraph'>
+							釋曰。此四惑與喜(18)憂二根相應。何以故。有時心歡喜欺誑他有&nbsp;</span><span id='5748439bi' class='paragraph'>
+						 (19)時憂惱心。&nbsp;</span><span id='5748440bi' class='paragraph'>
+						 乃至睡亦爾。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761684bi' class='paragraph'>
+							(21)諂誑眠覆憂喜相應。歡慼行轉唯意地故。歡(22)慼行者。謂或有時以歡喜心而行諂等。&nbsp;</span><span id='5761685bi' class='paragraph'>
+						 或(23)時有以憂慼心行。&nbsp;</span><span id='5761686bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950089bi' class='paragraph'>
+							.&nbsp;</span><span id='4950090bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950091bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936836bi' class='paragraph'>
+							&nbsp;</span><span id='4936837bi' class='paragraph'>
+						 &nbsp;</span><span id='4936838bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346383bi' class='paragraph'>
+							<b>madaḥ |<br />sukhābhyām</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748441bi' class='paragraph'>
+							偈曰。醉喜樂。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761687bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950092bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936839bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346384bi' class='paragraph'>
+							tṛtīye dhyāne sukhenādhastātsaumanasyena ūrdhvamupekṣayā | yasmāt&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748442bi' class='paragraph'>
+							釋曰。(20)若醉在第三定。與樂根相應。若在下地與喜(21)根相應。若在上地與捨根相應。何以故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761688bi' class='paragraph'>
+							憍喜樂相應。歡行唯意(24)故。在第三靜慮與樂相應。若在下諸地與(25)喜相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950093bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936840bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346385bi' class='paragraph'>
+							<b>sarvagopekṣā</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748443bi' class='paragraph'>
+							偈曰。(22)捨遍&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761689bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950094bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936841bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346386bi' class='paragraph'>
+							atas tayā sarve ’nuśayāḥ saṃprayujyante |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748444bi' class='paragraph'>
+							釋曰。一切小分惑與捨受相應。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761690bi' class='paragraph'>
+							此上所説諸隨煩惱一切皆與捨受(26)相應。相續斷時皆住捨故。有通行在唯捨(27)地故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950095bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936842bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346387bi' class='paragraph'>
+							na hi tasyāḥ kvacit pratiṣedho yathā ’vidyāyāḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748445bi' class='paragraph'>
+							何以故。(23)捨根無遮處譬如無明。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761691bi' class='paragraph'>
+							捨於一切相應無遮。譬如無明遍相(28)應故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950096bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936843bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346388bi' class='paragraph'>
+							<b>cātvāry anyāni pañcabhiḥ</b> || 5.58 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748446bi' class='paragraph'>
+							偈曰。餘四五根應&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761692bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950097bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936844bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346389bi' class='paragraph'>
+							āhlīkyamanapatrāpyaṃ styānamauddhatyaṃ caitānicatvāri paryavasthānāni pañcabhir apīndriyaiḥ saṃprayujyante |&nbsp;</span><span id='5346390bi' class='paragraph'>
+						 akuśalamahābhūmikatvāt kleśamahābhūmikatvāc ca |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748447bi' class='paragraph'>
+							釋(24)曰。無羞無慚疲弱掉起。此四惑與五根相應。&nbsp;</span><span id='5748448bi' class='paragraph'>
+						 (25)屬惡大地故。屬惑大地故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761693bi' class='paragraph'>
+							餘無慚愧惛沈掉擧四皆遍與五受(29)相應。&nbsp;</span><span id='5761694bi' class='paragraph'>
+						 前二是大不善地法攝故。後二是大煩(110c1)惱地法攝故。所説煩惱隨煩惱中。有依異(2)門佛説爲蓋。今次應辯。蓋相云何。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950098bi' class='paragraph'>
+							.&nbsp;</span><span id='4950099bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936845bi' class='paragraph'>
+							&nbsp;</span><span id='4936846bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346391bi' class='paragraph'>
+							yāni sūtre pañca nivaraṇāni uktāni kāmacchando vyāpādaḥ styānamiddhamauddhatyakaukṛtyaṃ vicikitsā ca |&nbsp;</span><span id='5346392bi' class='paragraph'>
+						 tatra kiṃ traidhātukyaḥ styānauddhatyavicikitsā gṛhyante |&nbsp;</span><span id='5346393bi' class='paragraph'>
+						 atha kāmapratisaṃyuktā eva |&nbsp;</span><span id='5346394bi' class='paragraph'>
+						 “kevalo ’yaṃ paripūrṇo ’kuśala rāśiryaduta pañca nivaraṇānīty” ekāntākuśalatvavacanāt sūtre |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748449bi' class='paragraph'>
+							經中所説五蓋謂(26)貪欲瞋恚睡弱掉悔疑。&nbsp;</span><span id='5748450bi' class='paragraph'>
+						 於此中爲並取三界(27)所攝睡弱掉悔疑。&nbsp;</span><span id='5748451bi' class='paragraph'>
+						 爲但取欲界所攝。&nbsp;</span><span id='5748452bi' class='paragraph'>
+						 是無雜(28)圓滿惡聚是五蓋。由經中説。彼一向惡故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761695bi' class='paragraph'>
+							See the next commentary of the following verse&nbsp;</span><span id='5761696bi' class='paragraph'>
+						 See the next commentary of the following verse&nbsp;</span><span id='5761697bi' class='paragraph'>
+						 See the next commentary of the following verse&nbsp;</span><span id='5761698bi' class='paragraph'>
+						 See the next commentary of the following verse&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950100bi' class='paragraph'>
+							.&nbsp;</span><span id='4950101bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950102bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950103bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936847bi' class='paragraph'>
+							&nbsp;</span><span id='4936848bi' class='paragraph'>
+						 &nbsp;</span><span id='4936849bi' class='paragraph'>
+						 &nbsp;</span><span id='4936850bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346395bi' class='paragraph'>
+							<b>kāme nivaraṇāni</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748453bi' class='paragraph'>
+							偈(29)曰。欲界中五蓋。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761699bi' class='paragraph'>
+							頌曰(3)蓋五唯在欲　食治用同故<br />(4)雖二立一蓋　障蘊故唯五&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950104bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936851bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346396bi' class='paragraph'>
+							nānyatra dhātau |&nbsp;</span><span id='5346397bi' class='paragraph'>
+						 kiṃ punaḥ kāraṇaṃ dve styānamiddhe ekaṃ nivaraṇamuktaṃ dve cauddhatyakaukṛtye ekam |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748454bi' class='paragraph'>
+							釋曰。於餘界不立五蓋故&nbsp;</span><span id='5748455bi' class='paragraph'>
+						 (264a1)＊唯欲界中有五蓋。復有何因。立睡弱二小惑(2)爲一蓋。合掉悔亦爾。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761700bi' class='paragraph'>
+							&nbsp;</span><span id='5761701bi' class='paragraph'>
+						 (5)論曰。佛於經中説蓋有五。一欲貪蓋。二瞋(6)恚蓋。三惛眠蓋四掉悔蓋。五疑蓋。此中所説(7)惛掉及疑。爲如欲貪瞋恚眠悔唯在欲界。(8)通三界耶。應知此三亦唯在欲。以契經(9)説如是五種純是圓滿不善聚故。色無色(10)界無有不善。然此五種純不善故。唯在欲(11)界非色無色。何故惛眠掉悔二蓋各有二(12)體合立一耶。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950105bi' class='paragraph'>
+							.&nbsp;</span><span id='4950106bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936852bi' class='paragraph'>
+							&nbsp;</span><span id='4936853bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346398bi' class='paragraph'>
+							<b>ekavipakṣāhārakṛtyataḥ |<br />dvekatā</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748456bi' class='paragraph'>
+							偈曰。一對治食事。合二(3)一。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761702bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950107bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936854bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346399bi' class='paragraph'>
+							dvayor ekatā dvyekatā | vipakṣaḥ pratipakṣo ’nāhāra ityeko ’rthaḥ |&nbsp;</span><span id='5346400bi' class='paragraph'>
+						 styānamiddhayoreka āhāraḥ sūtre ’nāhāraś ca |&nbsp;</span><span id='5346401bi' class='paragraph'>
+						 kaḥ styānamiddhanivaraṇasyāhāraḥ | pañca dharmāḥ |&nbsp;</span><span id='5346402bi' class='paragraph'>
+						 tandrā aratirvijṛmbhikā bhakte ’samatā cetaso līnatvam iti |&nbsp;</span><span id='5346403bi' class='paragraph'>
+						 atha styānamiddhanivaraṇasyānāhāraḥ ālokasaṃjñeti |&nbsp;</span><span id='5346404bi' class='paragraph'>
+						 kṛtyamanayorapyekam |&nbsp;</span><span id='5346405bi' class='paragraph'>
+						 ubhe api hy ete cittaṃ layaṃ codayataḥ |&nbsp;</span><span id='5346406bi' class='paragraph'>
+						 auddhatyakaukṛtyayorapyeka āhāra uktaḥ ekonāhāraḥ |&nbsp;</span><span id='5346407bi' class='paragraph'>
+						 kaś cauddhatyakaukṛtyanivaraṇasyāhāraḥ | catvāro dharmāḥ |&nbsp;</span><span id='5346408bi' class='paragraph'>
+						 jñātivitarko janapadavitarko ’maravitarkaḥ paurāṇasya ca hasitakriḍitaramitaparibhāvitasyānusmartā bhavatīti |&nbsp;</span><span id='5346409bi' class='paragraph'>
+						 kaś cauddhatyakaukṛtyanivaraṇasyānāhāraḥ | śamatha iti | kṛtyam apy anayor ekam |&nbsp;</span><span id='5346410bi' class='paragraph'>
+						 ubhe api hy ete cittamavyupaśāntaṃ vartayataḥ |&nbsp;</span><span id='5346411bi' class='paragraph'>
+						 ata ekavipakṣāhārakṛtyatvāt dvayor apye katvam uktam |&nbsp;</span><span id='5346412bi' class='paragraph'>
+						 yadi sarvakleśā nivaraṇaṃ kasmāt pañcaivoktāni |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748457bi' class='paragraph'>
+							釋曰。此二雙同一對治故。同食故。同一事(4)故。故合爲一。&nbsp;</span><span id='5748458bi' class='paragraph'>
+						 經中説。睡弱一食一非食。&nbsp;</span><span id='5748459bi' class='paragraph'>
+						 何法(5)是睡弱蓋食。有五種法。&nbsp;</span><span id='5748460bi' class='paragraph'>
+						 謂惓不安頻申不節(6)食心沈下。&nbsp;</span><span id='5748461bi' class='paragraph'>
+						 何法非睡弱蓋。食謂光明想。&nbsp;</span><span id='5748462bi' class='paragraph'>
+						 彼事(7)亦一。&nbsp;</span><span id='5748463bi' class='paragraph'>
+						 謂此二小惑。能令心沈下。&nbsp;</span><span id='5748464bi' class='paragraph'>
+						 掉悔二小惑。(8)亦説同一食同一非食。&nbsp;</span><span id='5748465bi' class='paragraph'>
+						 何法是掉悔蓋食。有(9)四法。&nbsp;</span><span id='5748466bi' class='paragraph'>
+						 親屬覺。國土覺。不死覺。數憶昔所更(10)事。謂遊戲安樂給侍。&nbsp;</span><span id='5748467bi' class='paragraph'>
+						 何法非掉悔蓋食。謂(11)奢摩他。此二亦同一事。&nbsp;</span><span id='5748468bi' class='paragraph'>
+						 何以故。此二同能令(12)心不寂靜&nbsp;</span><span id='5748469bi' class='paragraph'>
+						 是故同一對治食事故。合二立一(13)蓋&nbsp;</span><span id='5748470bi' class='paragraph'>
+						 若一切惑皆是蓋。云何＊唯説五爲蓋。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761703bi' class='paragraph'>
+							食治用同故合立一。食謂所食。(13)亦名資糧。治謂能治。亦名非食。用謂事用。(14)亦名功能。&nbsp;</span><span id='5761704bi' class='paragraph'>
+						 由此經中作如是説。惛眠雖二(15)食非食同。&nbsp;</span><span id='5761705bi' class='paragraph'>
+						 何等名爲惛眠蓋食。謂五種法。&nbsp;</span><span id='5761706bi' class='paragraph'>
+						 一(16)&MT90116;瞢。二不樂。三頻申。四食不平性。五心昧劣(17)性。&nbsp;</span><span id='5761707bi' class='paragraph'>
+						 何等名爲此蓋非食。謂光明想。&nbsp;</span><span id='5761708bi' class='paragraph'>
+						 如是二(18)種事用亦同。&nbsp;</span><span id='5761709bi' class='paragraph'>
+						 謂倶能令心性沈昧。&nbsp;</span><span id='5761710bi' class='paragraph'>
+						 掉悔雖(19)二食非食同。&nbsp;</span><span id='5761711bi' class='paragraph'>
+						 何等名爲掉悔蓋食。謂四種(20)法。&nbsp;</span><span id='5761712bi' class='paragraph'>
+						 一親里尋。二國土尋。三不死尋。四隨念(21)昔種種所更戲笑歡娯承奉等事。&nbsp;</span><span id='5761713bi' class='paragraph'>
+						 何等名爲(22)此蓋非食。謂奢摩他。如是二種事用亦同。&nbsp;</span><span id='5761714bi' class='paragraph'>
+						 謂(23)倶能令心不寂靜。&nbsp;</span><span id='5761715bi' class='paragraph'>
+						 由此説食治用同故惛(24)眠掉悔二合爲一。&nbsp;</span><span id='5761716bi' class='paragraph'>
+						 諸煩惱等皆有蓋義。何故(25)如來唯説此五。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950108bi' class='paragraph'>
+							.&nbsp;</span><span id='4950109bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950110bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950111bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950112bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950113bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950114bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950115bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950116bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950117bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950118bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950119bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950120bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950121bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936855bi' class='paragraph'>
+							&nbsp;</span><span id='4936856bi' class='paragraph'>
+						 &nbsp;</span><span id='4936857bi' class='paragraph'>
+						 &nbsp;</span><span id='4936858bi' class='paragraph'>
+						 &nbsp;</span><span id='4936859bi' class='paragraph'>
+						 &nbsp;</span><span id='4936860bi' class='paragraph'>
+						 &nbsp;</span><span id='4936861bi' class='paragraph'>
+						 &nbsp;</span><span id='4936862bi' class='paragraph'>
+						 &nbsp;</span><span id='4936863bi' class='paragraph'>
+						 &nbsp;</span><span id='4936864bi' class='paragraph'>
+						 &nbsp;</span><span id='4936865bi' class='paragraph'>
+						 &nbsp;</span><span id='4936866bi' class='paragraph'>
+						 &nbsp;</span><span id='4936867bi' class='paragraph'>
+						 &nbsp;</span><span id='4936868bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346413bi' class='paragraph'>
+							<b>pañcatā skandhavidhātavicikitsanāt</b> || 5.59 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748471bi' class='paragraph'>
+							偈(14)曰。能破法聚起。疑故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761717bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950122bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936869bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346414bi' class='paragraph'>
+							kāmacchandavyāpādābhyāṃ śīlaskandhavidhātaḥ |&nbsp;</span><span id='5346415bi' class='paragraph'>
+						 styānamiddhena prajñāskandhasyauddhatyakaukṛtyena samādhiskandhasya samādhiprajñayorabhāve satyeṣu vicikitsako bhavatītyataḥ pañcoktāni |&nbsp;</span><span id='5346416bi' class='paragraph'>
+						 etasyāṃ tu kalpanāyāṃ samādhiskandhavirodhina auddhatyakaukṛtyanivaraṇasya pūrva grahaṇaṃ prāpnoti |&nbsp;</span><span id='5346417bi' class='paragraph'>
+						 ato yathāsaṃkhyam etābhyāṃ samādhiprajñāskandhopaghāta ity apare |&nbsp;</span><span id='5346418bi' class='paragraph'>
+						 samādhiprayuktasya hi styānamiddhād bhayam | dharmapravicayaprayuktasyauddhatyakaukṛtyād iti |&nbsp;</span><span id='5346419bi' class='paragraph'>
+						 anye tvanyathā varṇayanti | kathaṃ varṇayanti |&nbsp;</span><span id='5346420bi' class='paragraph'>
+						 cāragatasya priyāpriyarūpeṣu viṣayeṣu nimittagrāhādvihāragatasya tatpūrvakau kāmacchandavyāpādau samādhipraveśasyādito ’ntarāyaṃ kurutaḥ |&nbsp;</span><span id='5346421bi' class='paragraph'>
+						 tataḥ samādhipraviṣṭasyāprayogeṇa śamathavipaśyanā sevanāt styānamiddhamauddhatyakaukṛtyaṃ vicikitsā ca yathākramaṃ śamathavipaśyanayorantarāyaṃ kurutaḥ |&nbsp;</span><span id='5346422bi' class='paragraph'>
+						 vyutthitasyāpi dharmanidhyānakāle vicikitsāntarāyaṃ karoti |&nbsp;</span><span id='5346423bi' class='paragraph'>
+						 ataḥ pañca nivaraṇānyuktāni |&nbsp;</span><span id='5346424bi' class='paragraph'>
+						 idaṃ vicāryate |&nbsp;</span><span id='5346425bi' class='paragraph'>
+						 visabhāgadhātusarvatragāṇāṃ nirodhamārgadarśanaprahātavyānāṃ ca sāsravālambanānāṃ yadālambanaṃ parijñāyate tadā na prahīyante |&nbsp;</span><span id='5346426bi' class='paragraph'>
+						 yadā prahīyante tadālambanaṃ na parijñāyate iti kathameṣāṃ prahāṇam |&nbsp;</span><span id='5346427bi' class='paragraph'>
+						 nāvaśyamālambanaparijñānāt kleśānāṃ kṣayo bhavati |&nbsp;</span><span id='5346428bi' class='paragraph'>
+						 kim tarhi | caturbhiḥ prakāraiḥ | katamaiś caturbhiḥ |&nbsp;</span><span id='5346429bi' class='paragraph'>
+						 darśanaheyānāṃ tāvat&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748472bi' class='paragraph'>
+							釋曰由貪欲瞋恚蓋。(15)戒法聚破壞。&nbsp;</span><span id='5748473bi' class='paragraph'>
+						 由睡弱蓋。慧法聚破壞。由掉悔(16)蓋。定法聚破壞。若定慧無則。於四諦起疑惑(17)心故。解脱解脱知見破壞。由此義故。説五爲(18)蓋。&nbsp;</span><span id='5748474bi' class='paragraph'>
+						 於此執中與定法聚相違。掉悔蓋應在慧(19)障前。&nbsp;</span><span id='5748475bi' class='paragraph'>
+						 是故餘師説。如其次第能破定聚及慧(20)聚。&nbsp;</span><span id='5748476bi' class='paragraph'>
+						 何以故。經中説。若人修行定觀。怖畏睡弱(21)若人修行簡擇法。怖畏掉悔。&nbsp;</span><span id='5748477bi' class='paragraph'>
+						 有餘師釋。蓋義(22)有異。云何釋。&nbsp;</span><span id='5748478bi' class='paragraph'>
+						 若人在六識行位。於可愛可憎(23)相塵中。由執相故。若在住位。是貪欲瞋恚。以(24)彼爲先因故起障。初正欲入定相心。&nbsp;</span><span id='5748479bi' class='paragraph'>
+						 次若已(25)入定。不如理修奢摩他毘鉢舍那。故起睡弱(26)掉悔疑。如次第障奢摩他毘鉢舍那。&nbsp;</span><span id='5748480bi' class='paragraph'>
+						 故解脱(27)解脱知見不得成。&nbsp;</span><span id='5748481bi' class='paragraph'>
+						 是故説五爲蓋。&nbsp;</span><span id='5748482bi' class='paragraph'>
+						 今應思此(28)義。&nbsp;</span><span id='5748483bi' class='paragraph'>
+						 是遍行不同分界惑。見滅道所滅。縁有流(29)法爲境諸惑。是時若觀察彼境。是時彼不滅。&nbsp;</span><span id='5748484bi' class='paragraph'>
+						 (264b1)是彼滅時。彼境不可觀察。由此義。彼云何可(2)滅。&nbsp;</span><span id='5748485bi' class='paragraph'>
+						 非必定＊唯由了別境界諸惑得滅。&nbsp;</span><span id='5748486bi' class='paragraph'>
+						 何爲由(3)四種因諸惑得滅何者爲四。&nbsp;</span><span id='5748487bi' class='paragraph'>
+						 若約見諦所滅(4)惑。由三因。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761718bi' class='paragraph'>
+							唯此於五蘊能爲勝障故。(26)謂貪恚蓋能障戒蘊。&nbsp;</span><span id='5761719bi' class='paragraph'>
+						 惛沈睡眠能障慧蘊。掉(27)擧惡作能障定蘊。定慧無故於四諦疑。疑(28)故能令乃至解脱解脱智見皆不得起。故(29)唯此五建立爲蓋。&nbsp;</span><span id='5761720bi' class='paragraph'>
+						 若作如是解釋經意。掉(111a1)悔理應惛眠前説。以必依定方有慧生。定(2)障亦應先慧障故。&nbsp;</span><span id='5761721bi' class='paragraph'>
+						 依如是理。有餘師言。此(3)五蓋中。惛眠掉悔如次能障定蘊慧蘊。&nbsp;</span><span id='5761722bi' class='paragraph'>
+						 由(4)此契經作如是説。修等持者怖畏惛眠。修(5)擇法者怖畏掉悔。&nbsp;</span><span id='5761723bi' class='paragraph'>
+						 有餘別説。唯立五因。彼(6)説云何。&nbsp;</span><span id='5761724bi' class='paragraph'>
+						 謂在行位先於色等種種境中取(7)可愛憎二種相故。後在住位由先爲因。(8)便起欲貪瞋恚二蓋。此二能障將入定心。&nbsp;</span><span id='5761725bi' class='paragraph'>
+						 (9)由此後時正入定位於止及觀不能正習。(10)由此便起惛眠掉悔如其次第障奢摩他(11)毘鉢舍那令不得起。&nbsp;</span><span id='5761726bi' class='paragraph'>
+						 由此於後出定位(12)中思擇法時疑復爲障。&nbsp;</span><span id='5761727bi' class='paragraph'>
+						 故建立蓋唯有此(13)五。&nbsp;</span><span id='5761728bi' class='paragraph'>
+						 今應思擇。&nbsp;</span><span id='5761729bi' class='paragraph'>
+						 他界遍行及見滅道斷有漏縁(14)諸惑於彼斷位不知彼所縁。&nbsp;</span><span id='5761730bi' class='paragraph'>
+						 知彼所縁時(15)而彼不斷。如是諸惑斷由何因。&nbsp;</span><span id='5761731bi' class='paragraph'>
+						 非要遍(16)知所縁故斷。&nbsp;</span><span id='5761732bi' class='paragraph'>
+						 若爾斷惑總由幾因由四種(17)因。何等爲四。&nbsp;</span><span id='5761733bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950123bi' class='paragraph'>
+							.&nbsp;</span><span id='4950124bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950125bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950126bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950127bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950128bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950129bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950130bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950131bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950132bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950133bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950134bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950135bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950136bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950137bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950138bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936870bi' class='paragraph'>
+							&nbsp;</span><span id='4936871bi' class='paragraph'>
+						 &nbsp;</span><span id='4936872bi' class='paragraph'>
+						 &nbsp;</span><span id='4936873bi' class='paragraph'>
+						 &nbsp;</span><span id='4936874bi' class='paragraph'>
+						 &nbsp;</span><span id='4936875bi' class='paragraph'>
+						 &nbsp;</span><span id='4936876bi' class='paragraph'>
+						 &nbsp;</span><span id='4936877bi' class='paragraph'>
+						 &nbsp;</span><span id='4936878bi' class='paragraph'>
+						 &nbsp;</span><span id='4936879bi' class='paragraph'>
+						 &nbsp;</span><span id='4936880bi' class='paragraph'>
+						 &nbsp;</span><span id='4936881bi' class='paragraph'>
+						 &nbsp;</span><span id='4936882bi' class='paragraph'>
+						 &nbsp;</span><span id='4936883bi' class='paragraph'>
+						 &nbsp;</span><span id='4936884bi' class='paragraph'>
+						 &nbsp;</span><span id='4936885bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346430bi' class='paragraph'>
+							<b>ālambanaparijñānāttadālambanasaṃkṣayāt |<br />ālambanagrahāṇāc ca</b>&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748488bi' class='paragraph'>
+							偈曰。由了別。彼境。能縁境滅故。(5)境界惑滅故。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761734bi' class='paragraph'>
+							頌曰(18)遍知所縁故　斷彼能縁故<br />(19)斷彼所縁故　對治起故斷&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950139bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936886bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346431bi' class='paragraph'>
+							tatrālambanaparijñānād duḥkhasamudayadarśanaheyānāṃ svabhūmyālambanānām anāsravālambanānāṃ ca |&nbsp;</span><span id='5346432bi' class='paragraph'>
+						 tadālambanasaṃkṣayād visabhāgadhātusarvatragāṇām |&nbsp;</span><span id='5346433bi' class='paragraph'>
+						 tadālambanā hi sabhāgadhātusarvatragāḥ |&nbsp;</span><span id='5346434bi' class='paragraph'>
+						 teṣu prahīṇeṣu te ’pi prahīṇā bhavanti |&nbsp;</span><span id='5346435bi' class='paragraph'>
+						 ālambanaprahāṇān nirodhamārgaheyānāṃ sāsravālambanānām |&nbsp;</span><span id='5346436bi' class='paragraph'>
+						 te hy anāsravālambanās teṣām ālambanam |&nbsp;</span><span id='5346437bi' class='paragraph'>
+						 atas teṣu prahīṇeṣu te ’piprahīṇā bhavanti | bhāvanāheyānāṃ punaḥ&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748489bi' class='paragraph'>
+							釋曰。此中由了別彼境者。謂見(6)苦集所滅惑。能縁自地起。及縁無流法爲境。&nbsp;</span><span id='5748490bi' class='paragraph'>
+						 (7)能縁境滅。故者謂遍行不同分界惑。&nbsp;</span><span id='5748491bi' class='paragraph'>
+						 何以故。(8)遍行同分界惑。是彼境。&nbsp;</span><span id='5748492bi' class='paragraph'>
+						 若所縁爲境。惑滅能(9)縁亦同滅。&nbsp;</span><span id='5748493bi' class='paragraph'>
+						 境界惑滅故。彼滅者謂見滅。道所(10)滅惑。縁有流境起。&nbsp;</span><span id='5748494bi' class='paragraph'>
+						 何以故。縁無流境起惑。&nbsp;</span><span id='5748495bi' class='paragraph'>
+						 是(11)彼境界。此惑若滅彼亦同滅。修道所滅惑。云(12)何得滅。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761735bi' class='paragraph'>
+							(20)論曰。且見所斷惑斷由前三因。一由遍知(21)所縁故斷。謂見苦集斷自界縁。及見滅道斷(22)無漏縁。二由斷彼能縁故斷。謂見苦集斷(23)他界縁。以自界縁能縁於彼。能縁若斷彼隨(24)斷故。&nbsp;</span><span id='5761736bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='5761737bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='5761738bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='5761739bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='5761740bi' class='paragraph'>
+						 三由斷彼所縁故斷。謂見滅道斷有(25)漏縁。&nbsp;</span><span id='5761741bi' class='paragraph'>
+						 以無漏縁能爲彼境所縁若斷彼隨斷(26)故。若修所斷惑斷由後一因。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950140bi' class='paragraph'>
+							.&nbsp;</span><span id='4950141bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950142bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950143bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950144bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950145bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950146bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936887bi' class='paragraph'>
+							&nbsp;</span><span id='4936888bi' class='paragraph'>
+						 &nbsp;</span><span id='4936889bi' class='paragraph'>
+						 &nbsp;</span><span id='4936890bi' class='paragraph'>
+						 &nbsp;</span><span id='4936891bi' class='paragraph'>
+						 &nbsp;</span><span id='4936892bi' class='paragraph'>
+						 &nbsp;</span><span id='4936893bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346438bi' class='paragraph'>
+							<b>pratipakṣodayāt kṣayaḥ</b> || 5.60 ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748496bi' class='paragraph'>
+							偈曰。對治起故盡。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761742bi' class='paragraph'>
+							See the full verse quoted previously&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950147bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936894bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='5346439bi' class='paragraph'>
+							yasya hi kleśaprakārasya pratipakṣo mārga utpadyate sa prahīyate |&nbsp;</span><span id='5346440bi' class='paragraph'>
+						 kasya punaḥ kaḥ pratipakṣaḥ |&nbsp;</span><span id='5346441bi' class='paragraph'>
+						 adhimātrādhimātrasya mṛdumṛduriti vistāreṇa paścāt pravedayiṣyāmaḥ |&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5748497bi' class='paragraph'>
+							釋曰。此惑品若是(13)對治道起。此惑即滅。&nbsp;</span><span id='5748498bi' class='paragraph'>
+						 何惑是所對治。何道是(14)能對治。&nbsp;</span><span id='5748499bi' class='paragraph'>
+						 最上上品惑是所對治。最下下品道(15)是能對治。此義後當廣説。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Chinese'><span id='5761743bi' class='paragraph'>
+							謂但由第四對(27)治起故斷。以若此品對治道生則此品中諸(28)惑頓斷&nbsp;</span><span id='5761744bi' class='paragraph'>
+						 何品諸惑誰爲對治。&nbsp;</span><span id='5761745bi' class='paragraph'>
+						 謂上上品所有(29)諸惑。下下品道能爲對治。至下下品所有(111b1)諸惑。&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='4950148bi' class='paragraph'>
+							.&nbsp;</span><span id='4950149bi' class='paragraph'>
+						 .&nbsp;</span><span id='4950150bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Uighur'><span id='4936895bi' class='paragraph'>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "4936762";
+							kilderef = "Akbh Uigh: ca. A.D. 900, Stockholm MS  - Uigh: ca. A.D. 900, Stockholm MS ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					<span id='4936896bi' class='paragraph'>
+						 &nbsp;</span><span id='4936897bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class=''><span id='bi' class=''>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "  ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=b5481ac5-f0ba-11e4-bbf3-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
